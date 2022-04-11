@@ -21,10 +21,10 @@
                 </div>
             </div>
         </nav>
-        <div class="bg-image p-xl-5 justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/landing.jpg'); height: 100vh; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
-            <div class="container justify-content-center align-items-center">
-                <div class="col-6 pt-5" style="margin-top: 5%; margin-bottom: 10%">
-                    <div class="ps-5 pe-5 bg-dark bg-opacity-25 rounded-3" style="padding-top: 25%; padding-bottom: 25%">
+        <div class="bg-image justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/landing.jpg'); height: 100vh; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+            <div class="container-fluid justify-content-center align-items-center">
+                <div class="col-6 bg-dark bg-opacity-10" style="padding-top: 10%; padding-bottom: 10%; height: 100vh;">
+                    <div class="ps-5 pe-5 rounded-3" style="padding-top: 25%; padding-bottom: 25%; height:50vh">
                         <h1 class="text-white" style="font-size: 50px"><b>Custom Your Perfect Package</b></h1>
                         <p class="text-white" style="font-size: 25px">Lengkapi keindahan bingkisan & hadiahmu dengan Custome Package</p>
                         <div class="p-1 d-flex justify-content-center align-items-center">
