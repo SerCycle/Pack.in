@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+*{
+	box-sizing:border-box;
+}
+
+nav{
+   background-color: #00a2c6;
+   padding: 5px;
+   position:absolute;
+   top: 0;
+}
+nav a{
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
+nav a:hover{
+	font-weight: bold;
+}
+header{
+	display: inline;
+}
+
+.featured-image{
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+    object-position: center;
+}
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.head{
+	padding: 60px;
+   	color: white;
+   	background:url("assets/image/HD wallpaper.jpg") fixed;
+	text-align: center;
+	font-size: 20px;
+	
+}
+.table{
+	text-align: left;
+}
+.display li{
+	display: inline;
+	margin-left: 5px;
+}
+.main{
+	margin: 0 auto;
+	padding: 20px;
+	overflow: auto;
+}
+
+body{
+	font-family: 'Quicksand',sans-serif;
+}
+
+h1{
+	color: #00A2C6;
+}
+
+h2,h3,h4{
+	color: #00A2C6;
+}
+section th{
+	text-align: left;
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #00a2c6;
+   text-align: center;
+}
+@media screen and (max-width: 1000px) {
+	#content,
+	aside {
+    	width: 100%;
+    	padding: 0;
+   }
+}
