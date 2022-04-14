@@ -14,18 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing',[
+    return view('page.landing',[
         "title" => "Pack.in"
     ]);
 });
 
 Route::get('/service', function () {
-    return view('servicepage',[
+    return view('page.servicepage',[
         "title" => "Service"
     ]);
 });
 Route::get('/about', function () {
-    return view('about',[
+    return view('page.about',[
         "title" => "About"
     ]);
 });

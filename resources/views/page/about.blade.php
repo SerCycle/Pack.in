@@ -1,18 +1,14 @@
 @extends('main')
-<head>
-
-</head>
-
 
 @section('container')
 
 
 
-    <div class="bg-image justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/about.png'); height: 50vh;            background-repeat: no-repeat; background-attachment: fixed; background-size: cover; max-height-30rem;">
+    <div class="bg-image justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/about.png'); height: 50vh; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; max-height-30rem;">
 
             <div class="justify-content-center align-items-center">
                 <div class="bg-dark bg-opacity-50 py-5" style="height: 50vh; ">
-                    <div class="ps-5 pe-5" style="height:50vh">
+                    <div class=" container ps-5 pe-5" style="height:50vh">
                     <h1 class="text-white px-1 " style="font-size: 50px;"><b>About Us</b></h1>
                             <p class="text-white px-1 text-wrap" style="font-size: 25px;">Pack.in merupakan suatu layanan packaging di Indonesia dengan memanfaatkan box atau kardus bekas yang masih layak untuk digunakan kembali.</p>
                     </div>
@@ -21,8 +17,13 @@
             </div>
     </div>
 
+<<<<<<< HEAD:resources/views/about.blade.php
 <!-- 
     <div class="col-8 py-3 px-3">
+=======
+
+    <div class="container col-8 py-3 px-3">
+>>>>>>> a138c9935f24c0c775dd52ad74c579d6e3c97475:resources/views/page/about.blade.php
 		<h1 class="text-dark pt-4 px-3" style="font-size: 50px">FAQ</h1>
 
         

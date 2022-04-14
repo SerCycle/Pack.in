@@ -1,4 +1,4 @@
-<div class="container-fluid d-flex flex-column h-100" style="background-color:#BB6552;"">
+<div class="container-fluid d-flex flex-column" style="background-color:#BB6552;">
     <footer class="w-100 py-4 flex-shrink-0">
         <div class="container py-4">
             <div class="row text-white">

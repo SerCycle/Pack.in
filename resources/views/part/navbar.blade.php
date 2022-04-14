@@ -1,7 +1,4 @@
-<head>
-    <title> {{ $title }}</title>
-</head>
-<div class="container-fluid" style="background-color:#BB6552; padding-left: 5%">
+<div class="container-fluid sticky-top" style="background-color:#BB6552; padding-left: 5%">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">Pack.in</a>
