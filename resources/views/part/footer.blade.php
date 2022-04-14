@@ -5,11 +5,15 @@
                 <div class="col-4 text-center">
                     <h1>Pack.in</h1>
                 </div>
-                <div class="col-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rem, omnis eos assumenda ducimus alias? Esse perspiciatis reiciendis aperiam, fuga, cumque tenetur commodi, ad possimus optio minima rem inventore itaque.
+                <div class="col-4 text-center">
+                    <b>Services</b><br>
+                    <a class="text-white" href="">Custome Package</a><br>
+                    <a class="text-white" href="">Sell Cardboard</a>
                 </div>
-                <div class="col-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rem, omnis eos assumenda ducimus alias? Esse perspiciatis reiciendis aperiam, fuga, cumque tenetur commodi, ad possimus optio minima rem inventore itaque.
+                <div class="col-4 text-center">
+                    <b>Contact Us</b><br>
+                    <a class="text-white" href="" style="text-decoration: none;">pack.in@gmail.com</a><br>
+                    <a class="text-white" href="" style="text-decoration: none;">(+62) 123 456 789</a>
                 </div>
             </div>
         </div>
