@@ -19,7 +19,7 @@
 
 
 
-    <div class="col-8 py-3 px-3">
+    <div class="container col-8 py-3 px-3">
 		<h1 class="text-dark pt-4 px-3" style="font-size: 50px">FAQ</h1>
         <h3 class="text-dark pt-4 px-3" ><i class="fa-solid fa-caret-down" style="margin-right:2%" ></i>Bagaimana cara melakukan pembayaran di Pack.in?</h3>
         <p class="pt-4 px-3"style="margin-left:4%; margin-right:25%;font-size: 20px">Dalam sistem pembayaran, Pack.in menerima transfer melalui bank BCA, Mandiri, BNI, maupun E-Wallet. Untuk nomor rekeningnya seperti tercantum sebagai berikut :</p>

@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse m-auto d-flex justify-content-center" id="navbarNav">
             <ul class="navbar-nav pe-4">
             <li class="nav-item active">
-                <a class="nav-link {{ ($title === 'Home' ) ? 'active' : '' }}" href="/">Home</a>
+                <a class="nav-link {{ ($title === 'Home' ) ? 'active' : '' }}" href="/home">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ ($title === 'Service' ) ? 'active' : '' }}" href="/service">Service</a>
