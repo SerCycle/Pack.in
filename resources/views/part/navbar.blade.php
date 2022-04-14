@@ -1,3 +1,6 @@
+<head>
+    <title> {{ $title }}</title>
+</head>
 <div class="container-fluid" style="background-color:#BB6552; padding-left: 5%">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -8,13 +11,13 @@
             <div class="collapse navbar-collapse m-auto d-flex justify-content-center" id="navbarNav">
             <ul class="navbar-nav pe-4">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link {{ ($title === 'Home' ) ? 'active' : '' }}" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
+                <a class="nav-link {{ ($title === 'Service' ) ? 'active' : '' }}" href="/service">Service</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link {{ ($title === 'About' ) ? 'active' : '' }}" href="/about">About Us</a>
             </li>
             </ul>
             </div>

@@ -9,7 +9,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
 
-        <title>Pack.in</title>
+        <title>{{ $title }}</title>
     </head>
     <body>
         <nav class="mb-auto fixed-top">
@@ -21,15 +21,15 @@
                 </div>
             </div>
         </nav>
-        <div class="bg-image justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/landing.jpg'); height: 100vh; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+        <div class="bg-image justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/about.png'); height: 100vh; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
             <div class="container-fluid justify-content-center align-items-center">
-                <div class="col-6 bg-dark bg-opacity-10" style="padding-top: 10%; padding-bottom: 10%; height: 100vh;">
+                <div class="col-6 bg-dark bg-opacity-10" style="padding-top: 10%; padding-bottom: 10%; height: 100vh; ">
                     <div class="ps-5 pe-5 rounded-3" style="padding-top: 25%; padding-bottom: 25%; height:50vh">
                         <h1 class="text-white" style="font-size: 50px"><b>Custom Your Perfect Package</b></h1>
                         <p class="text-white" style="font-size: 25px">Lengkapi keindahan bingkisan & hadiahmu dengan Custome Package</p>
                         <div class="p-1 d-flex justify-content-center align-items-center">
                             <div class="m-3 rounded-3">
-                                <a href="home" class="text-white btn p-2" style="background-image: radial-gradient(255.8% 457.4% at 88.45% 24.64%, #BB6552 0%, #646464 100%); font-size: 40px;">
+                                <a href="home" class="text-white btn d-grid gap-2 mx-auto" style="background-image: radial-gradient(255.8% 457.4% at 88.45% 24.64%, #BB6552 0%, #646464 100%); font-size: 30px;border-radius: 2rem;">
                                     Start Customize
                                 </a>
                             </div>
@@ -39,6 +39,12 @@
             </div>
         </div>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>\
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
     </body>
 </html>

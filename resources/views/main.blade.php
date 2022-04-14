@@ -10,7 +10,7 @@
 		
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
 
-        <title>Pack.in</title>
+        <title>{{ $title }}</title>
     </head>
     <body>
 			
