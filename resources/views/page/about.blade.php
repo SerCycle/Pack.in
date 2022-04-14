@@ -1,14 +1,10 @@
 @extends('main')
-<head>
-
-</head>
-
 
 @section('container')
 
 
 
-    <div class="bg-image justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/about.png'); height: 50vh;            background-repeat: no-repeat; background-attachment: fixed; background-size: cover; max-height-30rem;">
+    <div class="bg-image justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/about.png'); height: 50vh; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; max-height-30rem;">
 
             <div class="justify-content-center align-items-center">
                 <div class="bg-dark bg-opacity-50 py-5" style="height: 50vh; ">
