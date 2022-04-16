@@ -1,8 +1,42 @@
 @extends('main')
 
+<style>
+    .image1{
+        width: 250px;
+        height: 250px;
+        background-image: url('image/image5.png');
+        background-repeat: no-repeat;
+        background-position: 30% 50%;
+        background-size: auto 100%;
+    }
+    .image2{
+        width: 250px;
+        height: 250px;
+        background-image: url('image/image8.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 120%;
+    }
+    .image3{
+        width: 250px;
+        height: 250px;
+        background-image: url('image/Image-Home-CustomPackaging-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .image4{
+        width: 250px;
+        height: 250px;
+        background-image: url('image/Image-Home-CustomPackaging-2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+</style>
 @section('container')
     
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="HomeCarousel" class="carousel slide shadow mb-5" data-bs-ride="carousel">
         <div class="carousel-inner text-center text-white" style="height: 300px">
             <div class="carousel-item active bg-image justify-content-center align-items-center" style="background-image: url('image/about.png'); height: 50vh; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
                 <h1 class="p-5" style="font-size: 70px">Custome Package</h1>
@@ -15,14 +49,41 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#HomeCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#HomeCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
+    <div class="container" style="font-family:">
+        <div class="row justify-content-center align-items-center pb-5">
+            <div class="col-6">
+                <p class="mb-0">HOW WE CAN PERFECT YOUR PACKAGE</p>
+                <p style="font-size: 35px"><b>Bekerja Sama dengan Masyarkat sekitar</b></p>
+                <p>Pack.in menerima penjualan bahan package berupa kardus, maupun bungkusan lainnya dalam fitur “Jual Kardus”.</p>
+            </div>
+            <div class="col-3">
+                <div class="rounded shadow bg-image image1"></div>
+            </div>
+            <div class="col-3">
+                <div class="rounded shadow bg-image image2"></div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center mb-5">
+            <div class="col-3">
+                <div class="rounded shadow bg-image image3"></div>
+            </div>
+            <div class="col-3">
+                <div class="rounded shadow bg-image image4"></div>
+            </div>
+            <div class="col-6" align="right">
+                <p style="font-size: 35px"><b>Kustom Bingkisan / Paket dengan Ahli Desain</b></p>
+                <p>Kustomisasi bingkisan, paket, maupun hadiahmu hanya di Pack.in. Karena Pack.in telah menyediakan kustomisasi dengan desain sesuai keinginan anda, dan tentunya di-desain oleh ahli desain terbaik Pack.in.</p>
+            </div>
+        </div>
+    </div>
 @endsection
