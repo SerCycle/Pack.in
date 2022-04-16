@@ -25,6 +25,12 @@ Route::get('/service', function () {
     ]);
 });
 
+Route::get('/service/product', function () {
+    return view('servicepage.product',[
+        "title" => "Product Detail"
+    ]);
+});
+
 Route::get('/about', function () {
     return view('page.about',[
         "title" => "About"
