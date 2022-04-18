@@ -8,6 +8,9 @@ https://drive.google.com/drive/folders/1CRoHoxVzpzY4WObD14Ea05KI8jCUuB7t?usp=sha
 ## FIGMA
 https://www.figma.com/file/P588qGimlASHh0KABN7HLt/UI-Web-Custom-Packaging
 
+- UI User (Done)
+- UI Admin
+
 ## GIT ANGKATAN
 https://github.com/SI-RPL-2022
 
