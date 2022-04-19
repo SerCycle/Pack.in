@@ -25,7 +25,7 @@ Route::get('/service', function () {
     ]);
 });
 
-Route::get('/service/product', function () {
+Route::get('/product', function () {
     return view('servicepage.product',[
         "title" => "Product Detail"
     ]);
