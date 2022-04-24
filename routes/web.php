@@ -21,24 +21,24 @@ Route::get('/', function () {
 
 Route::get('/service', function () {
     return view('page.servicepage',[
-        "title" => "Service"
+        "title" => "Pack.in | Service"
     ]);
 });
 
 Route::get('/product', function () {
     return view('servicepage.product',[
-        "title" => "Product Detail"
+        "title" => "Pack.in | Product Detail"
     ]);
 });
 
 Route::get('/about', function () {
     return view('page.about',[
-        "title" => "About"
+        "title" => "Pack.in | About Us"
     ]);
 });
 
 Route::get('/home', function () {
     return view('page.home',[
-        "title" => "Home"
+        "title" => "Pack.in | Home"
     ]);
 });
