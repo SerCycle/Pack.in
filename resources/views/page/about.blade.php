@@ -9,7 +9,7 @@
             <div class="justify-content-center align-items-center">
                 <div class="bg-dark bg-opacity-50 py-5" style="height: 50vh; ">
                     <div class=" container ps-5 pe-5" style="height:50vh">
-                    <h1 class="text-white px-1 " style="font-size: 50px;"><b>About Us</b></h1>
+                    <h1 class="text-white px-1 pt-5" style="font-size: 50px;"><b>About Us</b></h1>
                             <p class="text-white px-1 text-wrap" style="font-size: 25px;">Pack.in merupakan suatu layanan packaging di Indonesia dengan memanfaatkan box atau kardus bekas yang masih layak untuk digunakan kembali.</p>
                     </div>
                     </div>
