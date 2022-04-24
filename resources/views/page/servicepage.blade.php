@@ -53,13 +53,13 @@
     </style>
 
 <div class="container card p-2 shadow-lg" style="margin-top: 2%; background-color: #BB6552; margin-bottom: 50px">
-	<h3 style="color: white; padding-left: 2%">Jenis Produk</h3>
-	<div class="container ">
+	<h3 style="color: white; margin-left: 30px">Jenis Produk</h3>
+	<div class="container">
 		<div class="row">
 {{--            card produk 1 --}}
 			<div class="col-sm">
-                <div class="card cardani shadow border-warning" style="width: 18rem;">
-                    <h5 class="card-title d-flex justify-content-center">Produk #1</h5>
+                <div class="card cardani shadow border-warning" style="width: 18rem; margin-left: 15px">
+                    <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #1</h5>
                     <hr>
                     <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-1.jpg" alt="Card image cap">
                     <div class="card-body">
@@ -70,8 +70,8 @@
 			</div>
 {{--            card produk 2 --}}
             <div class="col-sm">
-                <div class="card cardani shadow border-warning" style="width: 18rem;">
-                    <h5 class="card-title d-flex justify-content-center">Produk #2</h5>
+                <div class="card cardani shadow border-warning" style="width: 18rem; margin-left: 60px">
+                    <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #2</h5>
                     <hr>
                     <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-2.jpg" alt="Card image cap">
                     <div class="card-body">
@@ -82,8 +82,8 @@
             </div>
 {{--            card produk 3 --}}
             <div class="col-sm">
-                <div class="card shadow cardani border-warning" style="width: 18rem;">
-                    <h5 class="card-title d-flex justify-content-center">Produk #3</h5>
+                <div class="card shadow cardani border-warning" style="width: 18rem; margin-left: 95px">
+                    <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #3</h5>
                     <hr>
                     <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-3.jpg" alt="Card image cap">
                     <div class="card-body">
@@ -108,10 +108,10 @@
     <div class="content">
 {{--            card produk 4 --}}
         <div class="col-sm">
-            <div class="card shadow cardani border-warning" style="width: 18rem;">
-                <h5 class="card-title d-flex justify-content-center">Produk #4</h5>
+            <div class="card shadow cardani border-warning" style="width: 18rem; margin-left: 15px">
+                <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #4</h5>
                 <hr>
-                <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-4.png" alt="Card image cap">
+                <img width="360 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-4.png" alt="Card image cap">
                 <div class="card-body">
 {{--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
 {{--                    <a href="#" class="btn btn-primary">Go somewhere</a>--}}
