@@ -31,8 +31,8 @@ Route::get('/product', function () {
     ]);
 });
 
-Route::get('/about', function () {
-    return view('page.about',[
+Route::get('/aboutus', function () {
+    return view('page.aboutus',[
         "title" => "Pack.in | About Us"
     ]);
 });
