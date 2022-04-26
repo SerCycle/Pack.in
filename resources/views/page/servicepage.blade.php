@@ -50,10 +50,16 @@
         .card{
             border-radius: 20px;
         }
-    </style>
+        .container2{
+            /* background-image:url(image/image5.png); */
+            min-height:100%;
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/image5.png);
+            background-size:cover;
+        }
+    </style>s
 
 <div class="container card p-2 shadow-lg" style="margin-top: 2%; background-color: #BB6552; margin-bottom: 50px">
-	<h3 style="color: white; margin-left: 30px">Jenis Produk</h3>
+	<h3 style="color: white; margin-left: 30px; padding-top:2%; padding-bottom:2%;">Jenis Produk</h3>
 	<div class="container">
 		<div class="row">
 {{--            card produk 1 --}}
@@ -62,10 +68,6 @@
                     <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #1</h5>
                     <hr>
                     <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-{{--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
-{{--                        <a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
                 </div>
 			</div>
 {{--            card produk 2 --}}
@@ -74,10 +76,6 @@
                     <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #2</h5>
                     <hr>
                     <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-2.jpg" alt="Card image cap">
-                    <div class="card-body">
-{{--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
-{{--                        <a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
                 </div>
             </div>
 {{--            card produk 3 --}}
@@ -86,20 +84,12 @@
                     <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #3</h5>
                     <hr>
                     <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-3.jpg" alt="Card image cap">
-                    <div class="card-body">
-{{--                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
-{{--                        <a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
                 </div>
             </div>
 		</div>
 	</div>
 {{--    Collapse Button--}}
     <button type="button" class="collapsible d-flex justify-content-center">
-{{--    <img src="image/icon/Breakdown Sign.png" alt="breakdown">--}}
-{{--        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">--}}
-{{--            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>--}}
-{{--        </svg>--}}
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
             <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
@@ -112,14 +102,15 @@
                 <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #4</h5>
                 <hr>
                 <img width="360 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-4.png" alt="Card image cap">
-                <div class="card-body">
-{{--                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
-{{--                    <a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                </div>
             </div>
         </div>
 
     </div>
+</div>
+
+<div class="container2 container card p-2 shadow-lg" style="margin-top: 2%; margin-bottom: 50px;">
+    <h3 style="color: white; margin-left: 30px; padding-top:2%;">Jual Kardus</h3>
+    <p><br><br><br><br><br><br><br><br><br><br><br></p>
 </div>
 <script>
     var coll = document.getElementsByClassName("collapsible");
