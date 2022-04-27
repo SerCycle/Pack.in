@@ -17,7 +17,7 @@
                 <div class="d-flex container align-items-center">
                     <h1 class="pt-1 pb-1" style="font-size: 50px">Pack.in</h1>
                     <span class="pb-1 ms-3 me-3" style="font-size: 60px">|</span>
-                    <p class="pt-3" style="font-size: 30px">About Us</p>
+                    <a href="about" class="text-dark pt-3" style="font-size: 30px; text-decoration: none">About Us</a>
                 </div>
             </div>
         </nav>
