@@ -32,7 +32,7 @@
     .image4{
         width: 200px;
         height: 200px;
-        background-image: url('image/product/Image Product-4.jpg');
+        background-image: url('image/product/Image Product-4.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto 100%;

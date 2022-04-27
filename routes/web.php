@@ -15,30 +15,35 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('page.landing',[
-        "title" => "Pack.in"
+        "title" => "Pack.in",
+        "nav" => "0"
     ]);
 });
 
 Route::get('/service', function () {
     return view('page.servicepage',[
-        "title" => "Pack.in | Service"
+        "title" => "Pack.in | Service",
+        "nav" => "2"
     ]);
 });
 
 Route::get('/product', function () {
     return view('servicepage.product',[
-        "title" => "Pack.in | Product Detail"
+        "title" => "Pack.in | Product Detail",
+        "nav" => "2"
     ]);
 });
 
 Route::get('/aboutus', function () {
     return view('page.aboutus',[
-        "title" => "Pack.in | About Us"
+        "title" => "Pack.in | About Us",
+        "nav" => "3"
     ]);
 });
 
 Route::get('/home', function () {
     return view('page.home',[
-        "title" => "Pack.in | Home"
+        "title" => "Pack.in | Home",
+        "nav" => "1"
     ]);
 });

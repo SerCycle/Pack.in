@@ -8,13 +8,13 @@
             <div class="collapse navbar-collapse m-auto d-flex justify-content-center" id="navbarNav">
             <ul class="navbar-nav pe-4">
             <li class="nav-item active">
-                <a class="nav-link {{ ($title === 'Home' ) ? 'active' : '' }}" href="/home">Home</a>
+                <a class="nav-link {{ ($nav === '1' ) ? 'active' : '' }}" href="/home">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ ($title === 'Service' ) ? 'active' : '' }}" href="/service">Service</a>
+                <a class="nav-link {{ ($nav === '2' ) ? 'active' : '' }}" href="/service">Service</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ ($title === 'About Us' ) ? 'active' : '' }}" href="/aboutus">About Us</a>
+                <a class="nav-link {{ ($nav === '3' ) ? 'active' : '' }}" href="/aboutus">About Us</a>
             </li>
             </ul>
             </div>
