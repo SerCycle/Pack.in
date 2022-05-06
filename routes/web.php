@@ -27,6 +27,21 @@ Route::get('/service', function () {
     ]);
 });
 
+Route::get('/jualkardus', function () {
+    return view('page.jualkardus',[
+        "title" => "Pack.in | Service - Jual Kardus",
+        "nav" => "2"
+    ]);
+});
+
+Route::get('/jualkardusform1', function () {
+    return view('page.jualkardusform1',[
+        "title" => "Pack.in | Service - Jual Kardus Form 1",
+        "nav" => "2"
+    ]);
+});
+
+
 Route::get('/product', function () {
     return view('servicepage.product',[
         "title" => "Pack.in | Product Detail",

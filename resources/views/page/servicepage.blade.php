@@ -23,6 +23,8 @@
             animation-duration: 2s;
             position: relative;
             animation-iteration-count: infinite;
+            width: 40px;
+            height: 40px;
         }
         @keyframes moving {
             0%   {top:0px;}
@@ -56,7 +58,14 @@
             background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/image5.png);
             background-size:cover;
         }
-    </style>s
+        img{
+            border-radius: 20%;
+        }
+        .btn{
+            width: 180px;
+
+        }
+    </style>
 
 <div class="container card p-2 shadow-lg" style="margin-top: 2%; background-color: #BB6552; margin-bottom: 50px">
 	<h3 style="color: white; margin-left: 30px; padding-top:2%; padding-bottom:2%;">Jenis Produk</h3>
@@ -90,7 +99,15 @@
 	</div>
 {{--    Collapse Button--}}
     <button type="button" class="collapsible d-flex justify-content-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16"> -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+        </svg> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+
+
             <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
             <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
         </svg>
@@ -109,7 +126,7 @@
 </div>
 
 <div class="container2 container card p-2 shadow-lg" style="margin-top: 2%; margin-bottom: 50px;">
-    <h3 style="color: white; margin-left: 30px; padding-top:2%;">Jual Kardus</h3>
+    <a href="jualkardus" class="btn" style="color: white; font-size: 30px; margin-left:10px">Jual Kardus</a>
     <p><br><br><br><br><br><br><br><br><br><br><br></p>
 </div>
 <script>
