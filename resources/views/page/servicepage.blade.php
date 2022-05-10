@@ -17,6 +17,12 @@
         .active, .collapsible:hover {
 
         }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
         svg{
             transition: transform 0.5s;
             animation-name: moving;
@@ -73,11 +79,13 @@
 		<div class="row">
 {{--            card produk 1 --}}
 			<div class="col-sm">
+                <a href="/product">
                 <div class="card cardani shadow border-warning" style="width: 18rem; margin-left: 15px">
                     <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #1</h5>
                     <hr>
                     <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-1.jpg" alt="Card image cap">
                 </div>
+                </a>
 			</div>
 {{--            card produk 2 --}}
             <div class="col-sm">
