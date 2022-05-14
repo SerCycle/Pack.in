@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +42,13 @@ Route::get('/jualkardusform1', function () {
     ]);
 });
 
+
+// Route::get('/product', [ProductController::class, 'index']){
+//     return view('servicepage.product',[
+//         "title" => "Pack.in | Product Detail",
+//         "nav" => "2"
+//     ]);
+// };
 
 Route::get('/product', function () {
     return view('servicepage.product',[
