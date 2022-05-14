@@ -132,11 +132,12 @@
 
     </div>
 </div>
-
-<div class="container2 container card p-2 shadow-lg" style="margin-top: 2%; margin-bottom: 50px;">
-    <a href="jualkardus" class="btn" style="color: white; font-size: 30px; margin-left:10px">Jual Kardus</a>
-    <p><br><br><br><br><br><br><br><br><br><br><br></p>
-</div>
+<a href="jualkardus">
+    <div class="container2 container card p-2 shadow-lg" style="margin-top: 2%; margin-bottom: 50px;">
+        <p style="color: white; font-size: 30px; margin-left:10px">Jual Kardus</p>
+        <p><br><br><br><br><br><br><br><br><br><br><br></p>
+    </div>
+</a>
 <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
