@@ -42,12 +42,28 @@ Route::get('/jualkardusform1', function () {
 });
 
 
+
 Route::get('/product', function () {
     return view('servicepage.product',[
         "title" => "Pack.in | Product Detail",
         "nav" => "2"
     ]);
 });
+
+Route::get('/productorder1', function () {
+    return view('page.productorder1',[
+        "title" => "Pack.in | Product Order Design",
+        "nav" => "2"
+    ]);
+});
+
+Route::get('/productorder2', function () {
+    return view('page.productorder2',[
+        "title" => "Pack.in | Product Order Biodata",
+        "nav" => "2"
+    ]);
+});
+
 
 Route::get('/aboutus', function () {
     return view('page.aboutus',[
