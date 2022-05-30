@@ -39,10 +39,11 @@
         margin-right: 10%;
         margin-left: 10%;
     }
+
 </style>
 
 @section('container')
-    
+
     <div class="container rounded mt-3 text-white" style="background-color:#BB6552">
         <div class="row p-5">
             <div class="col-3">
@@ -52,6 +53,7 @@
                 <p>Produk #1</p>
                 <p style="font-size: 30px"><b>Rp100.000</b></p>
                 <p>Box berbahan E-Fluete Board dengan ukuran minimal 26cm x 26cm. Cocok untuk menyimpan segala jenis barang, mulai dari buku, kosmetik, bahkan cocok digunakan sebagai bungkus kado.</p>
+                <button type="button" class="btn btn-outline-warning"><b>PESAN SEKARANG</b></button>
             </div>
         </div>
     </div>
