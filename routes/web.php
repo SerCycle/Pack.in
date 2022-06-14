@@ -43,19 +43,14 @@ Route::get('/jualkardusform1', function () {
 });
 
 
-// Route::get('/product', [ProductController::class, 'index']){
+Route::get('/product', [ProductController::class, 'index']);
+
+// Route::get('/product', function () {
 //     return view('servicepage.product',[
 //         "title" => "Pack.in | Product Detail",
 //         "nav" => "2"
 //     ]);
-// };
-
-Route::get('/product', function () {
-    return view('servicepage.product',[
-        "title" => "Pack.in | Product Detail",
-        "nav" => "2"
-    ]);
-});
+// });
 
 Route::get('/aboutus', function () {
     return view('page.aboutus',[

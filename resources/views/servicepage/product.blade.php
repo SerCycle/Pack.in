@@ -4,7 +4,7 @@
     .image1{
         width: 200px;
         height: 200px;
-        background-image: url('image/product/Image Product-1.jpg');
+        background-image: url('{{ $products[0]->image }}');
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -50,8 +50,8 @@
                 <div class="bg-image rounded image1"></div>
             </div>
             <div class="ps-5 col-9">
-                <p>Produk #1</p>
-                <p style="font-size: 30px"><b>Rp100.000</b></p>
+                <p>{{ $products[0]->product_name }}</p>
+                <p style="font-size: 30px"><b>Rp{{ $products[0]->harga }}</b></p>
                 <p>Box berbahan E-Fluete Board dengan ukuran minimal 26cm x 26cm. Cocok untuk menyimpan segala jenis barang, mulai dari buku, kosmetik, bahkan cocok digunakan sebagai bungkus kado.</p>
                 <button type="button" class="btn btn-outline-warning"><b>PESAN SEKARANG</b></button>
             </div>

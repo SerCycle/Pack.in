@@ -14,8 +14,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
-        return view('servicepage.product', compact('products'));
+        $products = product::all();
+        $title = "Pack.in | Product Detail";
+        $nav = "2";
+        return view('servicepage.product', compact("products", "title", "nav"));
     }
 
     /**
