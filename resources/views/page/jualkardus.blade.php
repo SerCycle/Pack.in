@@ -15,22 +15,21 @@
         
 </style>
 
-<div class="container2 container card p-2 shadow-lg" style="margin-top: 2%; margin-bottom: 50px">
-        <h3 style="position: absolute; color: white; margin-left: 44%; top: 45%;">Jual Kardus</h3>
-        <p><br><br><br><br><br><br><br><br><br><br><br></p>
-    </div>
-
-    <div class="tulisan" style="margin-left: 7%; margin-right: 7%;">
-        <h3 style="text-align: center;" class="fw-bold ">Bekerja Sama dengan Masyarakat Sekitar</h3>
-        <p style="text-align: center; margin-top: 20px;font-size: 20px; color: rgb(104, 113, 122);" >In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor. In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor. In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor.</p>
-        <p style="text-align: center; margin-top: 20px;font-size: 20px; color: rgb(104, 113, 122);">sell your cardboard here</p>
+<div class="container2 container card p-3 shadow-lg" style="margin-top: 2%; margin-bottom: 50px">
+        <h3 style="position: absolute; color: white; margin-left: 43%; top: 35%;">Jual Kardus</h3>
+        <p><br><br><br><br><br></p>
         <!-- <button 
         style="margin: left:4%; margin-right: 4%; margin-top: 20px;font-size: 15px; background-color: rgb(83, 15, 0);color: white; border: none; display: block; margin: auto; padding-left: 40px; padding-right: 40px; border-radius: 10px; padding-top: 10px;padding-bottom: 10px" class="fw-bold">
             Jual Sekarang</button> -->
         <button href="jualkardusform1"
-        style="margin: left:4%; margin-right: 4%; margin-top: 20px;font-size: 15px; background-color: rgb(83, 15, 0);
-        color: white; border: none; display: block; margin: auto; padding-left: 40px; padding-right: 40px; border-radius: 10px; padding-top: 10px;padding-bottom: 10px" class="fw-bold mb-3">
+        style="margin: left:4%; margin-right: 4%; margin-top: 1%; font-size: 15px; background-color: rgb(83, 15, 0);
+        color: white; border: none; display: block; margin: auto; padding-left: 40px; padding-right: 40px; border-radius: 10px; padding-top: 10px; padding-bottom: 10px" class="fw-bold mb-3">
             Jual Sekarang</button>
+        <p><br><br></p>
     </div>
+
+    <div class="tulisan" style="margin-left: 7%; margin-right: 7%; margin-bottom: 7%">
+        <h3 style="text-align: center;" class="fw-bold ">Bekerja Sama dengan Masyarakat Sekitar</h3>
+        <p style="text-align: center; margin-top: 20px;font-size: 20px; color: rgb(104, 113, 122);" >In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor. In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor. In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor.</p>
 @endsection
 

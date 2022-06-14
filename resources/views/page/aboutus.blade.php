@@ -2,7 +2,26 @@
 
 @section('container')
 
+    <style>
+        details > summary {
+            padding: 20px 4px 20px 20px;
+            font-size: 175%;
+            font-weight: 500;
+            width: 1000px;
+            background-color: #ffffff;
+            border: 10px;
+            box-shadow: 1px 1px 2px #ffffff;
+            cursor: pointer;
+        }
 
+        details > p {
+            padding: 4px 4px 4px 54px;
+            font-size: 125%;
+            background-color: #ffffff;
+            margin: 0;
+            box-shadow: 1px 1px 2px #ffffff;
+        }
+    </style>
 
     <div class="bg-image justify-content-center align-items-center" style="font-family: Poppins; background-image: url('image/about.png'); height: 50vh; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; max-height-30rem;">
 
@@ -21,11 +40,30 @@
 
     <div class="container col-8 py-3 px-3">
 		<h1 class="text-dark pt-4 px-3" style="font-size: 50px">FAQ</h1>
-        <h3 class="text-dark pt-4 px-3" ><i class="fa-solid fa-caret-down" style="margin-right:2%" ></i>Bagaimana cara melakukan pembayaran di Pack.in?</h3>
-        <p class="pt-4 px-3"style="margin-left:4%; margin-right:25%;font-size: 20px">Dalam sistem pembayaran, Pack.in menerima transfer melalui bank BCA, Mandiri, BNI, maupun E-Wallet. Untuk nomor rekeningnya seperti tercantum sebagai berikut :</p>
+        <details>
+            <summary>
+                Bagaimana cara melakukan pembayaran di Pack.in?
+            </summary>
+            <p>
+                Dalam sistem pembayaran, Pack.in hanya menerima transfer melalui bank BCA, Mandiri, BNI, maupun E-Wallet.<br> Untuk nomor rekeningnya seperti tercantum sebagai berikut <b>(A.N : Custom Package)</b> : <br><br>
+                <b>> Rek. BCA      : 0097-9279-00</b> <br><br>
+                <b>> Rek. Mandiri  : 098-79-2790065-7</b> <br><br>
+                <b>> Rek. BNI      : 099-799-7900</b> <br><br>
+                <b>> OVO/Gopay/DANA: 0888-8888-8888</b> <br><br>
+            </p>
+        </details>
         
-        <h3 class="text-dark pt-4 px-3" ><i class="fa-solid fa-caret-down" style="margin-right:2%" ></i>Bagaimana cara menjual kardus di Packin?</h3>
-        <p class="pt-4 px-3"style="margin-left:4%; margin-right:25%;font-size: 20px">Menu “Jual Kardus” terdapat pada menu Services > Jual Kardus. Kemudian ketika kita klik Jual Sekarang, maka kami akan mengarahkan anda untuk melakukan penjualan kardus tersebut mulai dari pengisian biodata, info kardus, hingga tanggal bersedia diambilnya kardus tersebut</p>
+
+        <details>
+            <summary>
+                Bagaimana cara menjual kardus di Packin?
+            </summary>
+            <p>
+                Menu “Jual Kardus” terdapat pada Tab <b>Services > Jual Kardus</b>. Kemudian ketika kita klik Jual Sekarang, maka kami akan mengarahkan anda untuk melakukan penjualan kardus tersebut mulai dari pengisian biodata, info kardus, hingga tanggal bersedia diambilnya kardus tersebut
+            </p>
+        </details>
+    
+        <p class="pt-4 px-5"></p>
 
     </div>
 
