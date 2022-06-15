@@ -114,3 +114,17 @@ Route::get('/home', function () {
         "nav" => "1"
     ]);
 });
+
+Route::get('/admin', function () {
+    return view('admin.home',[
+        "title" => "Pack.in | Wellcome Admin",
+        "nav" => "2"
+    ]);
+});
+
+Route::get('/admin-orderinfo', function () {
+    return view('admin.order_info',[
+        "title" => "Pack.in | Customize Order",
+        "nav" => "2"
+    ]);
+});
