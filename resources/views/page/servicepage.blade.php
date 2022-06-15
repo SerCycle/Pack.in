@@ -76,33 +76,18 @@
 <div class="container card p-2 shadow-lg" style="margin-top: 2%; background-color: #BB6552; margin-bottom: 50px">
 	<h3 style="color: white; margin-left: 30px; padding-top:2%; padding-bottom:2%;">Jenis Produk</h3>
 	<div class="container">
-		<div class="row">
-{{--            card produk 1 --}}
-			<div class="col-sm">
-                <a href="/product">
-                <div class="card cardani shadow border-warning" style="width: 18rem; margin-left: 15px">
-                    <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #1</h5>
-                    <hr>
-                    <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-1.jpg" alt="Card image cap">
+		<div class="row d-flex justify-content-around">
+            @for ($i = 0; $i < 3; $i++)
+                <div class="col-sm d-flex justify-content-center">
+                    <a href="{{ route('selectedProduct', $i+1) }}">
+                    <div class="p-3 card cardani shadow border-warning" style="width: 18rem;">
+                        <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">{{ $products[$i]->product_name }}</h5>
+                        <hr>
+                        <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="{{ URL::to('/' . $products[$i]->image )}}" alt="Card image cap">
+                    </div>
+                    </a>
                 </div>
-                </a>
-			</div>
-{{--            card produk 2 --}}
-            <div class="col-sm">
-                <div class="card cardani shadow border-warning" style="width: 18rem; margin-left: 60px">
-                    <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #2</h5>
-                    <hr>
-                    <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-2.jpg" alt="Card image cap">
-                </div>
-            </div>
-{{--            card produk 3 --}}
-            <div class="col-sm">
-                <div class="card shadow cardani border-warning" style="width: 18rem; margin-left: 95px">
-                    <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #3</h5>
-                    <hr>
-                    <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-3.jpg" alt="Card image cap">
-                </div>
-            </div>
+            @endfor
 		</div>
 	</div>
 {{--    Collapse Button--}}
@@ -121,15 +106,21 @@
         </svg>
     </button>
     <div class="content">
-{{--            card produk 4 --}}
-        <div class="col-sm">
-            <div class="card shadow cardani border-warning" style="width: 18rem; margin-left: 15px">
-                <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">Produk #4</h5>
-                <hr>
-                <img width="360 px" height="240px" class="card-img-top d-flex justify-content-center" src="image/product/Image Product-4.png" alt="Card image cap">
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                @for ($i = 3; $i < 4; $i++)
+                    <div class="col-sm d-flex justify-content-center">
+                        <a href="{{ route('selectedProduct', $i+1) }}">
+                        <div class="p-3 card cardani shadow border-warning" style="width: 18rem;">
+                            <h5 class="card-title d-flex justify-content-center" style="margin-top: 15px">{{ $products[$i]->product_name }}</h5>
+                            <hr>
+                            <img width="240 px" height="240px" class="card-img-top d-flex justify-content-center" src="{{ URL::to('/' . $products[$i]->image )}}" alt="Card image cap">
+                        </div>
+                        </a>
+                    </div>
+                @endfor
             </div>
         </div>
-
     </div>
 </div>
 <a href="jualkardus">

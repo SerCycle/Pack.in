@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,12 +22,12 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/service', function () {
-    return view('page.servicepage',[
-        "title" => "Pack.in | Service",
-        "nav" => "2"
-    ]);
-});
+// Route::get('/service', function () {
+//     return view('page.servicepage',[
+//         "title" => "Pack.in | Service",
+//         "nav" => "2"
+//     ]);
+// });
 
 Route::get('/jualkardus', function () {
     return view('page.jualkardus',[
@@ -49,7 +50,8 @@ Route::get('/product', function () {
     ]);
 });
 
-Route::get('/product', [ProductController::class, 'index']);
+Route::get('/service', [PageController::class, 'servicePage'])->name('Service');
+Route::get('/product/{id}', [ProductController::class, 'selectedProduct'])->name('selectedProduct');
 
 // Route::get('/product', function () {
 //     return view('servicepage.product',[
