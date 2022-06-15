@@ -232,6 +232,9 @@ img{
   top: 25px;
   transform: rotate(-225deg);
 }
+.image-upload>input {
+    display: none;
+  }
 </style>
 
     <h4 class="text-center text-success py-3" style="font-weight: 700;"> Pack.in - Product Order</h4>
@@ -305,10 +308,16 @@ img{
             </div>
 
 
-            <label class="fw-bold" for="">*Alamat :</label>
-            <input type="text" class="input-field" placeholder="Alamat"> 
-            <button type="button" class="btn" >BACK</button>
-            <button type="button" class="btn" style="margin-left: 205px;">NEXT</button>
+            <div class="image-upload" style="margin-bottom: 40px;">
+                <label for="file-input">
+                  <img src="image/icon/UploadDesignForm.png" style="width: 415px; margin-top: 14px;"/>
+                </label>
+              
+                <input id="file-input" type="file" />
+              </div>
+
+            <button type="button" class="btn"">BACK</button>
+            <button type="button" class="btn" style="margin-left: 300px; margin-top: -55px;">NEXT</button>
         </form>
     </div>
 
