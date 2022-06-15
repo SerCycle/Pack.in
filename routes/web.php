@@ -125,6 +125,13 @@ Route::get('/admin', function () {
 Route::get('/admin-orderinfo', function () {
     return view('admin.order_info',[
         "title" => "Pack.in | Customize Order",
-        "nav" => "2"
+        "nav" => "11"
+    ]);
+});
+
+Route::get('/admin-cardboardinfo', function () {
+    return view('admin.sell_cardboard_info',[
+        "title" => "Pack.in | Sell Cardboard",
+        "nav" => "22"
     ]);
 });
