@@ -67,10 +67,6 @@
         img{
             border-radius: 20%;
         }
-        .btn{
-            width: 180px;
-
-        }
     </style>
 
 <div class="container card p-2 shadow-lg" style="margin-top: 2%; background-color: #BB6552; margin-bottom: 50px">
