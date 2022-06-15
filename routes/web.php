@@ -42,6 +42,19 @@ Route::get('/jualkardusform1', function () {
     ]);
 });
 
+Route::get('/cekpesanan1', function () {
+    return view('page.cekpesanan1',[
+        "title" => "Pack.in | Home Page - Cek Pesanan",
+        "nav" => "2"
+    ]);
+});
+
+Route::get('/cekpesanan2', function () {
+    return view('page.cekpesanan2',[
+        "title" => "Pack.in | Home Page - Cek Pesanan",
+        "nav" => "2"
+    ]);
+});
 Route::get('/product', function () {
     return view('servicepage.product',[
         "title" => "Pack.in | Product Detail",
@@ -72,6 +85,19 @@ Route::get('/productorder2', function () {
     ]);
 });
 
+Route::get('/productorder3', function () {
+    return view('page.productorder3',[
+        "title" => "Pack.in | Product Order Detail",
+        "nav" => "2"
+    ]);
+});
+
+Route::get('/productorder4', function () {
+    return view('page.productorder4',[
+        "title" => "Pack.in | Product Order Resi",
+        "nav" => "2"
+    ]);
+});
 
 Route::get('/aboutus', function () {
     return view('page.aboutus',[
