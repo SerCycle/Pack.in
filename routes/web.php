@@ -43,6 +43,20 @@ Route::get('/jualkardusform1', function () {
     ]);
 });
 
+Route::get('/jualkardusform2', function () {
+    return view('servicepage.JualKardus.jualkardusform2',[
+        "title" => "Pack.in | Service - Jual Kardus Form 2",
+        "nav" => "2"
+    ]);
+});
+
+Route::get('/jualkardusform3', function () {
+    return view('servicepage.JualKardus.jualkardusform3',[
+        "title" => "Pack.in | Service - Jual Kardus Form 3",
+        "nav" => "2"
+    ]);
+});
+
 Route::get('/cekpesanan1', function () {
     return view('page.cekpesanan1',[
         "title" => "Pack.in | Home Page - Cek Pesanan",
