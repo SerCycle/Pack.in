@@ -21,10 +21,10 @@
         <!-- <button 
         style="margin: left:4%; margin-right: 4%; margin-top: 20px;font-size: 15px; background-color: rgb(83, 15, 0);color: white; border: none; display: block; margin: auto; padding-left: 40px; padding-right: 40px; border-radius: 10px; padding-top: 10px;padding-bottom: 10px" class="fw-bold">
             Jual Sekarang</button> -->
-        <button href="jualkardusform1"
-        style="margin: left:4%; margin-right: 4%; margin-top: 1%; font-size: 15px; background-color: rgb(83, 15, 0);
+        <a href="jualkardusform1"
+        style="text-decoration: none; margin: left:4%; margin-right: 4%; margin-top: 1%; font-size: 15px; background-color: rgb(83, 15, 0);
         color: white; border: none; display: block; margin: auto; padding-left: 40px; padding-right: 40px; border-radius: 10px; padding-top: 10px; padding-bottom: 10px" class="fw-bold mb-3">
-            Jual Sekarang</button>
+            Jual Sekarang</a>
         <p><br><br></p>
     </div>
 

@@ -32,7 +32,7 @@
                 <p>{{ $name }}</p>
                 <p style="font-size: 30px"><b>Rp{{ $harga }}</b></p>
                 <p>{{ $description }}</p>
-                <button type="button" class="btn btn-outline-warning"><b>PESAN SEKARANG</b></button>
+                <a href="/productorder1" type="button" class="btn btn-outline-warning"><b>PESAN SEKARANG</b></a>
             </div>
         </div>
     </div>
