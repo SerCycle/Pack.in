@@ -32,4 +32,3 @@
         <h3 style="text-align: center;" class="fw-bold ">Bekerja Sama dengan Masyarakat Sekitar</h3>
         <p style="text-align: center; margin-top: 20px;font-size: 20px; color: rgb(104, 113, 122);" >In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor. In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor. In ultricies fermentum aliquet. Pellentesque dui magna, condimentum non ullamcorper at, cursus in sem. Nunc condimentum, purus ac enenatis commodo libero, am auctor porta tortor.</p>
 @endsection
-

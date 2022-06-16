@@ -30,14 +30,14 @@ Route::get('/', function () {
 // });
 
 Route::get('/jualkardus', function () {
-    return view('page.jualkardus',[
+    return view('servicepage.JualKardus.jualkardus',[
         "title" => "Pack.in | Service - Jual Kardus",
         "nav" => "2"
     ]);
 });
 
 Route::get('/jualkardusform1', function () {
-    return view('page.jualkardusform1',[
+    return view('servicepage.JualKardus.jualkardusform1',[
         "title" => "Pack.in | Service - Jual Kardus Form 1",
         "nav" => "2"
     ]);
@@ -74,28 +74,28 @@ Route::get('/product/{id}', [ProductController::class, 'selectedProduct'])->name
 // });
 
 Route::get('/productorder1', function () {
-    return view('page.productorder1',[
+    return view('servicepage.ProductOrder.productorder1',[
         "title" => "Pack.in | Product Order Design",
         "nav" => "2"
     ]);
 });
 
 Route::get('/productorder2', function () {
-    return view('page.productorder2',[
+    return view('servicepage.ProductOrder.productorder2',[
         "title" => "Pack.in | Product Order Biodata",
         "nav" => "2"
     ]);
 });
 
 Route::get('/productorder3', function () {
-    return view('page.productorder3',[
+    return view('servicepage.ProductOrder.productorder3',[
         "title" => "Pack.in | Product Order Detail",
         "nav" => "2"
     ]);
 });
 
 Route::get('/productorder4', function () {
-    return view('page.productorder4',[
+    return view('servicepage.ProductOrder.productorder4',[
         "title" => "Pack.in | Product Order Resi",
         "nav" => "2"
     ]);
