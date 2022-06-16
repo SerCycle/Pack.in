@@ -10,6 +10,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .contact-box
+        {
+            width: 500px;
+            top: 35%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            position: absolute;
+        }
+        form
+        {
+            margin: 60px;
+        }
+        /* label
+        {
+            
+        } */
+        .input-field
+        {
+            width: 400px;
+            height: 40px;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            padding-left:10px;
+            border-radius: 10px;
+            font-weight: 700;
+            opacity: 0.5;
+        }
+
+        .btn
+        {
+            border-radius: 10px;
+            color: black;
+            background-color: white;
+            font-size: 12px;
+            cursor: pointer;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: 0.5px solid black;
+            font-weight: 800;
+        }
+    </style>
     <h4 class="text-center text-success py-3" style="font-weight: 700;"> Pack.in - Sell Cardboard</h4>
     <h3 class="text-center mb-3" style="font-weight: 700; margin-bottom: 30px;">Cardboard Info</h3>
 
