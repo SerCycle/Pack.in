@@ -57,6 +57,14 @@ Route::get('/jualkardusform3', function () {
     ]);
 });
 
+Route::get('/jualkardusform4', function () {
+    return view('servicepage.JualKardus.jualkardusform4',[
+        "title" => "Pack.in | Service - Jual Kardus Form 4",
+        "nav" => "2"
+    ]);
+});
+
+
 Route::get('/cekpesanan1', function () {
     return view('page.cekpesanan1',[
         "title" => "Pack.in | Home Page - Cek Pesanan",
