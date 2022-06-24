@@ -58,7 +58,7 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
+    <p class="text-center font" style="margin-bottom : 30px; font-size: 25px;font-weight: bold;">Ingin Memantau Pesananmu?<a href="/cekpesanan1" class="font-italic" style="margin-left: 8px;">cek di sini</a></p>
     <div class="container" style="font-family:">
         <div class="row justify-content-center align-items-center pb-5">
             <div class="col-6">
