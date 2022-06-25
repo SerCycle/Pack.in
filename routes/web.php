@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -87,31 +88,34 @@ Route::get('/product', function () {
 
 Route::get('/service', [PageController::class, 'servicePage'])->name('Service');
 Route::get('/product/{id}', [ProductController::class, 'selectedProduct'])->name('selectedProduct');
-Route::get('/designorder/{id}', [ProductController::class, 'orderProduct1'])->name('OrderProduct1');
-Route::post('/biodataorder/{id}', [ProductController::class, 'orderProduct2'])->name('OrderProduct2');
-Route::post('/validatedorder/{id}', [ProductController::class, 'orderProduct3'])->name('OrderProduct3');
 
+Route::get('/designorder/{id}', [OrderController::class, 'orderProduct1'])->name('OrderProduct1');
+Route::post('/biodataorder/{id}', [OrderController::class, 'orderProduct2'])->name('OrderProduct2');
+Route::post('/validatedorder/{id}', [OrderController::class, 'orderProduct3'])->name('OrderProduct3');
+Route::post('/OrderDone', [OrderController::class, 'orderFinal'])->name('OrderProductFinal');
 
-Route::get('/productorder1', function () {
-    return view('servicepage.ProductOrder.productorder1',[
-        "title" => "Pack.in | Product Order Design",
-        "nav" => "2"
-    ]);
-});
+// Route::get('track/{id}', [UserController::class, 'index'])->name('user.index');
 
-Route::get('/productorder2', function () {
-    return view('servicepage.ProductOrder.productorder2',[
-        "title" => "Pack.in | Product Order Biodata",
-        "nav" => "2"
-    ]);
-});
+// Route::get('/productorder1', function () {
+//     return view('servicepage.ProductOrder.productorder1',[
+//         "title" => "Pack.in | Product Order Design",
+//         "nav" => "2"
+//     ]);
+// });
 
-Route::get('/productorder3', function () {
-    return view('servicepage.ProductOrder.productorder3',[
-        "title" => "Pack.in | Product Order Detail",
-        "nav" => "2"
-    ]);
-});
+// Route::get('/productorder2', function () {
+//     return view('servicepage.ProductOrder.productorder2',[
+//         "title" => "Pack.in | Product Order Biodata",
+//         "nav" => "2"
+//     ]);
+// });
+
+// Route::get('/productorder3', function () {
+//     return view('servicepage.ProductOrder.productorder3',[
+//         "title" => "Pack.in | Product Order Detail",
+//         "nav" => "2"
+//     ]);
+// });
 
 Route::get('/productorder4', function () {
     return view('servicepage.ProductOrder.productorder4',[

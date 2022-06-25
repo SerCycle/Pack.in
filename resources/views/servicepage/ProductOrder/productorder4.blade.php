@@ -34,11 +34,12 @@
     <h4 class="text-center text-success py-3" style="font-weight: 700;"> Pack.in - Product Order</h4>
     <h3 class="text-center mb-3" style="font-weight: 700;">Done!</h3>
     <h3 class="text-center mb-3" style="font-weight: 700;">Please wait for your order</h3>
+    <h3 class="text-center mb-3" style="font-weight: 700;">Checking payment in progress...</h3>
 
     <div class="container text-center">
-        <p style="font-size: 20px; margin-top: 10%; font-weight: 500;">Harap simpan nomor pemesanan anda</p>
+        <p style="font-size: 20px; margin-top: 5%; font-weight: 500;">Harap simpan nomor pemesanan anda</p>
         <div class="container" style="max-width: 189px;">
-            <p style="font-size: 20px;font-weight: 600; border: 1px solid black; display:flex; border-radius: 5px; text-align: center;">012030055950119 <button class="material-symbols-outlined" style="border: 1px solid balck; padding: 1px;margin-left: 10px; height: 30px; background-color: #C4C4C4; border-radius: 5px;">
+            <p style="font-size: 20px;font-weight: 600; display:flex; border-radius: 5px; text-align: center;">{{ $generatePaymentId }} <button class="material-symbols-outlined" style="border: 1px solid balck; padding: 1px;margin-left: 10px; height: 30px; background-color: #C4C4C4; border-radius: 5px;">
                 content_copy
             </button></p>
         </div>
