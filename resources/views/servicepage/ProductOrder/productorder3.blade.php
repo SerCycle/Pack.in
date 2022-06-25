@@ -65,22 +65,22 @@
 
                   <div class="col" style="margin-left: 80px;">
                     <div class="row">
-                        <p>120742GFXC76Z1</p>
+                        <p>{{ $orders->order_id }}</p>
                     </div>
                     <div class="row">
-                        <p>Bambang Putri</p>
+                        <p>{{ $users->user_fullname }}</p>
                     </div>
                     <div class="row">
-                        <p>Jl. Bougenville No. 23, Bantul.</p>
+                        <p>{{ $users->address }}</p>
                     </div>
                     <div class="row">
-                        <p>Produk #1</p>
+                        <p>{{ $products->product_name }}</p>
                     </div>
                     <div class="row">
-                        <p>Rp100.000</p>
+                        <p>{{ $products->harga }}</p>
                     </div>
                     <div class="row">
-                        <p>Belum Bayar</p>
+                        <p>{{ $orders->order_status }}</p>
                     </div>
                   </div>
             </div>
@@ -100,7 +100,7 @@
     
             <div class="row">
                 <div class="col text-left">
-                    <button type="button" class="btn" for="home"> HOME </button>
+                    <a href="/home" class="btn" for="home"> HOME </a>
                 </div>
                 <div class="col">
                     <button type="button" class="btn" style="margin-left: 62%;" for="upload">UPLOAD</button>

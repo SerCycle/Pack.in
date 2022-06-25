@@ -92,11 +92,11 @@ class ProductController extends Controller
 
     public function orderProduct3(Request $request)
     {
-        $products = product::all();
-        $idproduct = $request->product_id;
-        $name = $products[$idproduct-1]->product_name;
-        $harga = $products[$idproduct-1]->harga;
-        $image = $products[$idproduct-1]->image;
+        // $products = product::all();
+        // $idproduct = $request->product_id;
+        // $name = $products[$idproduct-1]->product_name;
+        // $harga = $products[$idproduct-1]->harga;
+        // $image = $products[$idproduct-1]->image;
 
         $user_fullname = $request->user_fullname;
         $phone = $request->phone;
@@ -108,15 +108,20 @@ class ProductController extends Controller
         $NewUsers->user_fullname = $user_fullname;
         $NewUsers->phone = $phone;
         $NewUsers->address = $address;
+        $NewUsers->save();
         
-        DB::table('orders')
-            ->where('id', 1)
+        order::where('order_id', $request->order_id)
             ->update(['user_id' => $generateUserId]);
-        
+
+        $users = user::where('user_id', $generateUserId)->first();    
+        $orders = order::where('order_id', $request->order_id)->first();
+        $products = product::where('product_id', $request->product_id)->first();
+
         $title = "Pack.in | Product Order Detail";
         $nav = "2";
 
-        return view('servicepage.ProductOrder.productorder3', compact("UpdateOrder", "title", "nav"));
+        return view('servicepage.ProductOrder.productorder3', compact("orders", "products",
+                                                                "users", "title", "nav"));
     }
 
     /**
