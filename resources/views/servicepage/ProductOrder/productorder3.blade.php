@@ -87,26 +87,30 @@
           </div>
     </div>
         <div class="col" style="margin: 50px; padding: 0px;">
-            <div class="row" style="width: 100%; max-width: 780px;">
-                <div class="image-upload text-center">
-                    <label for="file-input">
-                      <img src="image/icon/UploadPembayaranFrom.png" style="width: 100%; margin-top: 14px; margin-left:3px;"/>
-                    </label>
-                    <input id="file-input" type="file" />
-                  </div>
-            </div>
-        
-        
-    
-            <div class="row">
-                <div class="col text-left">
-                    <a href="/home" class="btn" for="home"> HOME </a>
+            <form action="{{ route('OrderProductFinal', $orders->order_id) }}" enctype="multipart/form-data" method="POST" style="margin: 35px;">
+                @csrf
+                <input type="hidden" value="{{ $orders->order_id }}" name="order_id">
+                <div class="row" style="width: 100%; max-width: 780px;">
+                    <div class="" style="">
+                        <label for="payment_verification" class="form-label">Masukkan Bukti Pemabayaran:</label>
+                        <input class="form-control" type="file" name="payment_verification" id="payment_verification">
+                    </div>
+                    {{-- <div class="image-upload text-center">
+                        <label for="file-input">
+                        <img src="image/icon/UploadPembayaranFrom.png" style="width: 100%; margin-top: 14px; margin-left:3px;"/>
+                        </label>
+                        <input id="file-input" type="file" />
+                    </div> --}}
                 </div>
-                <div class="col">
-                    <button type="button" class="btn" style="margin-left: 62%;" for="upload">UPLOAD</button>
-
+                <div class="row">
+                    <div class="col text-left">
+                        <a href="/home" class="btn" for="home"> HOME </a>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn" style="margin-left: 62%;" for="upload">UPLOAD</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
 
     

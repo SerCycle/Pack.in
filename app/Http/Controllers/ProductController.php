@@ -84,12 +84,6 @@ class ProductController extends Controller
 
     public function orderProduct3(Request $request)
     {
-        // $products = product::all();
-        // $idproduct = $request->product_id;
-        // $name = $products[$idproduct-1]->product_name;
-        // $harga = $products[$idproduct-1]->harga;
-        // $image = $products[$idproduct-1]->image;
-
         $user_fullname = $request->user_fullname;
         $phone = $request->phone;
         $address = $request->address;
@@ -114,71 +108,5 @@ class ProductController extends Controller
 
         return view('servicepage.ProductOrder.productorder3', compact("orders", "products",
                                                                 "users", "title", "nav"));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\product  $product
-     * @return \Illuminate\Http\Response
-     */
-    public function show(product $product)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\product  $product
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(product $product)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\product  $product
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, product $product)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\product  $product
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(product $product)
-    {
-        //
     }
 }
