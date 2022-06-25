@@ -39,7 +39,7 @@
     <div class="container text-center">
         <p style="font-size: 20px; margin-top: 5%; font-weight: 500;">Harap simpan nomor pemesanan anda</p>
         <div class="container" style="max-width: 189px;">
-            <p style="font-size: 20px;font-weight: 600; display:flex; border-radius: 5px; text-align: center;">{{ $generatePaymentId }} <button class="material-symbols-outlined" style="border: 1px solid balck; padding: 1px;margin-left: 10px; height: 30px; background-color: #C4C4C4; border-radius: 5px;">
+            <p style="font-size: 20px;font-weight: 600; display:flex; border-radius: 5px; text-align: center;">{{ $orders->order_id }} <button class="material-symbols-outlined" style="border: 1px solid balck; padding: 1px;margin-left: 10px; height: 30px; background-color: #C4C4C4; border-radius: 5px;">
                 content_copy
             </button></p>
         </div>
