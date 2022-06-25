@@ -99,7 +99,7 @@ img{
             <input type="text" class="input-field" placeholder="Nomor HP" name="phone" id="phone">
             <label class="fw-bold" for="address">*Alamat :</label>
             <input type="text" class="input-field" placeholder="Alamat" name="address" id="address"> 
-            <button type="button" class="btn" >BACK</button>
+            <input class="btn" type="button" value="BACK" onclick="history.go(-1)">
             <button type="submit" class="btn" style="margin-left: 205px;">NEXT</button>
         </form>
     </div>

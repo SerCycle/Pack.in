@@ -43,7 +43,7 @@
                 content_copy
             </button></p>
         </div>
-        <button type="button" class="btn" for="home"> Home </button>
-        <button type="button" class="btn" style="margin-left: 5%;" for="upload">Add Order</button>
+        <a href="/home" type="button" class="btn" for="home"> Home </a>
+        <a href="{{ route('Service') }}" type="button" class="btn" style="margin-left: 5%;" for="upload">Add Order</a>
     </div>
 </body>

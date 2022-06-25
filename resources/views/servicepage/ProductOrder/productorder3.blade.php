@@ -95,12 +95,6 @@
                         <label for="payment_verification" class="form-label">Masukkan Bukti Pemabayaran:</label>
                         <input class="form-control" type="file" name="payment_verification" id="payment_verification">
                     </div>
-                    {{-- <div class="image-upload text-center">
-                        <label for="file-input">
-                        <img src="image/icon/UploadPembayaranFrom.png" style="width: 100%; margin-top: 14px; margin-left:3px;"/>
-                        </label>
-                        <input id="file-input" type="file" />
-                    </div> --}}
                 </div>
                 <div class="row">
                     <div class="col text-left">

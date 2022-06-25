@@ -23,13 +23,6 @@ Route::get('/', function () {
     ]);
 });
 
-// Route::get('/service', function () {
-//     return view('page.servicepage',[
-//         "title" => "Pack.in | Service",
-//         "nav" => "2"
-//     ]);
-// });
-
 Route::get('/jualkardus', function () {
     return view('servicepage.JualKardus.jualkardus',[
         "title" => "Pack.in | Service - Jual Kardus",
@@ -76,12 +69,6 @@ Route::get('/cekpesanan1', function () {
 Route::get('/cekpesanan2', function () {
     return view('page.cekpesanan2',[
         "title" => "Pack.in | Home Page - Cek Pesanan",
-        "nav" => "2"
-    ]);
-});
-Route::get('/product', function () {
-    return view('servicepage.product',[
-        "title" => "Pack.in | Product Detail",
         "nav" => "2"
     ]);
 });
