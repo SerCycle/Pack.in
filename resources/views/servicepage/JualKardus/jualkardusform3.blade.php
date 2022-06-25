@@ -65,7 +65,6 @@
     <div class="contact-box mt-3">
         <form action="" style="margin: 35px;">
             <label class="fw-bold" for="">*Pilih Tanggal :</label>
-            <!-- <input type="date" class="input-field" placeholder="-Select Thickness-"> -->
 
             <input type="text" placeholder="dd-mm-yyyy" onfocus="(this.type='date')" onblur="(this.type='text')" class="input-field">
 

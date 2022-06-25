@@ -63,25 +63,27 @@
 
 
     <div class="contact-box mt-3">
-        <form action="" style="margin: 35px;">
+        <form action="{{ route('AddProductSell') }}" enctype="multipart/form-data" method="POST" style="margin: 35px;">
+            @csrf
+            <input type="hidden" value="{{ $users->user_id }}" name="user_id">
             <label class="fw-bold" for="">*Ketebalan :</label>
-            <select type="text" class="input-field" placeholder="-Select Thickness-">
+            <select type="text" class="input-field" placeholder="-Select Thickness-" name="ketebalan" id="ketebalan">
                 <option value="" disabled selected hidden>-Select Thickness-</option>
-                <option value="">2 mm - 5 mm</option>
-                <option value="">6 mm - 7 mm</option>
-                <option value="">8 mm - 10 mm</option>
+                <option value="2 mm - 5 mm">2 mm - 5 mm</option>
+                <option value="6 mm - 7 mm">6 mm - 7 mm</option>
+                <option value="8 mm - 10 mm">8 mm - 10 mm</option>
             </select>
-            <label class="fw-bold" for="">*Ukuran :</label>
-            <input type="text" class="input-field" placeholder="ex : 100 cm x 200 cm">
+            <label class="fw-bold" for="">*Berat :</label>
+            <input type="text" class="input-field" placeholder="ex : 100 g" name="berat" id="berat">
             <label class="fw-bold" for="">*Kondisi :</label>
-            <select type="text" class="input-field" placeholder="-Select Condition-">
+            <select type="text" class="input-field" placeholder="-Select Condition-" name="kondisi" id="kondisi">
                 <option value="" disabled selected hidden>-Select Condition-</option>
-                <option value="">Baru</option>
-                <option value="">Bekas</option>
+                <option value="Baru">Baru</option>
+                <option value="Bekas">Bekas</option>
             </select>
 
-            <button type="button" class="btn" >BACK</button>
-            <button type="button" class="btn" style="margin-left: 205px;">NEXT</button>
+            <input class="btn" type="button" value="BACK" onclick="history.go(-1)">
+            <button type="submit" class="btn" style="margin-left: 205px;">NEXT</button>
         </form>
     </div>
 
