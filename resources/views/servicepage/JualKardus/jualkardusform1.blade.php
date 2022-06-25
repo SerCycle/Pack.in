@@ -63,15 +63,16 @@ form
 
 
     <div class="contact-box mt-3">
-        <form action="" style="margin: 35px;">
-            <label class="fw-bold" for="">*Nama :</label>
-            <input type="text" class="input-field" placeholder="Nama Lengkap">
-            <label class="fw-bold" for="">*No HP :</label>
-            <input type="text" class="input-field" placeholder="Nomor HP">
-            <label class="fw-bold" for="">*Alamat :</label>
-            <input type="text" class="input-field" placeholder="Alamat"> 
-            <button type="button" class="btn" >BACK</button>
-            <button type="button" class="btn" style="margin-left: 205px;">NEXT</button>
+        <form action="{{ route('AddBioPenjual') }}" method="POST" style="margin: 35px;">
+            @csrf
+            <label class="fw-bold" for="user_fullname">*Nama :</label>
+            <input type="text" class="input-field" placeholder="Nama Lengkap" name="user_fullname" id="user_fullname">
+            <label class="fw-bold" for="phone">*No HP :</label>
+            <input type="text" class="input-field" placeholder="Nomor HP" name="phone" id="phone">
+            <label class="fw-bold" for="address">*Alamat :</label>
+            <input type="text" class="input-field" placeholder="Alamat" name="address" id="address"> 
+            <input class="btn" type="button" value="BACK" onclick="history.go(-1)">
+            <button type="submit" class="btn" style="margin-left: 205px;">NEXT</button>
         </form>
     </div>
 
