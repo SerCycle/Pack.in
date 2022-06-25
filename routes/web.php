@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ShipmentController;
 use App\Http\Controllers\OrderController;
 
 /*
@@ -81,35 +82,7 @@ Route::post('/biodataorder/{id}', [OrderController::class, 'orderProduct2'])->na
 Route::post('/validatedorder/{id}', [OrderController::class, 'orderProduct3'])->name('OrderProduct3');
 Route::post('/OrderDone', [OrderController::class, 'orderFinal'])->name('OrderProductFinal');
 
-// Route::get('track/{id}', [UserController::class, 'index'])->name('user.index');
-
-// Route::get('/productorder1', function () {
-//     return view('servicepage.ProductOrder.productorder1',[
-//         "title" => "Pack.in | Product Order Design",
-//         "nav" => "2"
-//     ]);
-// });
-
-// Route::get('/productorder2', function () {
-//     return view('servicepage.ProductOrder.productorder2',[
-//         "title" => "Pack.in | Product Order Biodata",
-//         "nav" => "2"
-//     ]);
-// });
-
-// Route::get('/productorder3', function () {
-//     return view('servicepage.ProductOrder.productorder3',[
-//         "title" => "Pack.in | Product Order Detail",
-//         "nav" => "2"
-//     ]);
-// });
-
-Route::get('/productorder4', function () {
-    return view('servicepage.ProductOrder.productorder4',[
-        "title" => "Pack.in | Product Order Resi",
-        "nav" => "2"
-    ]);
-});
+Route::post('/tracking', [ShipmentController::class, 'trackProduct'])->name('Tracking');
 
 Route::get('/aboutus', function () {
     return view('page.aboutus',[

@@ -44,13 +44,13 @@
     </div>
     
     <h3 class="text-center" style="font-weight: bold; margin-top: 10%; margin-bottom: 60px;">Masukan Kode Pesanan Anda</h3>
-    <form action="" class="text-center">
-        <input type="text" style="width: 600px; border: 0.5px solid black;border-radius: 10px; height: 50px;">
+    <form action="{{ route('Tracking') }}" method="POST" class="text-center">
+        @csrf
+        <input type="text" name="order_id" id="order_id" style="width: 600px; border: 0.5px solid black;border-radius: 10px; height: 50px;">
+        <div class="container col-md-12 text-center" style="margin-top: 30px;">
+            <input class="btn" type="button" value="BACK" onclick="history.go(-1)">
+            <button type="submit" class="btn" style="margin-left: 30%;" for="upload"> CHECK </button>
+        </div>
     </form>
-
-    <div class="container col-md-12 text-center" style="margin-top: 30px;">
-        <button type="button" class="btn" for="home"> BACK </button>
-        <button type="button" class="btn" style="margin-left: 30%;" for="upload"> CHECK </button>
-    </div>
 
 </body>
