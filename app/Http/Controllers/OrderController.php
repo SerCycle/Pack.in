@@ -113,12 +113,14 @@ class OrderController extends Controller
         $payments->payment_verification = $imgPath;
         $payments->save();
 
+        $orders = order::where('order_id', $request->order_id)->first();
+
         order::where('order_id', $request->order_id)
             ->update(['order_status' => "Paid"]);
 
         $title = "Pack.in | Product Order Done";
         $nav = "2";
 
-        return view('servicepage.ProductOrder.productorder4', compact("title", "generatePaymentId"));
+        return view('servicepage.ProductOrder.productorder4', compact("title", "orders"));
     }
 }
