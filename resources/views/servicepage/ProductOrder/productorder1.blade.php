@@ -93,7 +93,7 @@
     </div>
 
     <div class="col-form mt-3 ">
-        <form action="{{ route('OrderProduct2', $idproduct) }}" method="POST" style="margin: 35px;">
+        <form action="{{ route('OrderProduct2', $idproduct) }}" enctype="multipart/form-data" method="POST" style="margin: 35px;">
             @csrf
             <input type="hidden" value="{{ $idproduct }}" name="product_id">
             <label class="fw-bold" for="warna">*Warna :</label>

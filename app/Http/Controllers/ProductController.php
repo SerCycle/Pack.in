@@ -54,22 +54,14 @@ class ProductController extends Controller
         $image = $products[$idproduct-1]->image;
         $warna = $request->warna;
 
-        // if ($files = $request->file('design_user')) {
-        //     $destinationPath = 'StorageImage';
-        //     $file = $request->file('design_user');
-        //     $profileImage = "design_user" . rand(10000, 20000) . "." . $files->getClientOriginalExtension();
-        //     $imgPath = $file->storeAs('', $profileImage);
-        //     $files->move($destinationPath, $profileImage);
-        // }
-
-        if ($request->hasFile('file')) {
-
-            $request->validate([
-                'image' => 'mimes:jpeg,bmp,png' // Only allow .jpg, .bmp and .png file types.
-            ]);
-
-            // Save the file locally in the storage/public/ folder under a new folder named /product
-            $request->file->store('StorageImage', 'public');
+        if ($files = $request->file('design_user')) {
+            $destinationPath = 'StorageImage';
+            $file = $request->file('design_user');
+            $designImage = "design_user" . rand(10000, 20000) . "." . $files->getClientOriginalExtension();
+            $imgPath = $file->storeAs('', $designImage);
+            $files->move($destinationPath, $designImage);
+        } else {
+            $imgPath = "none";
         }
 
         $NewOrders = new order();
@@ -80,7 +72,7 @@ class ProductController extends Controller
         $NewOrders->order_date = date('Y-m-d H:i:s');
         $NewOrders->order_status = "unpaid";
         $NewOrders->warna = $warna;
-        // $NewOrders->design_user = $request->file->hashName();
+        $NewOrders->design_user = $imgPath;
         $NewOrders->save();
         
         $title = "Pack.in | Product Order Biodata";
