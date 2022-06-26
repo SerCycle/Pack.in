@@ -2,7 +2,7 @@
 
 @section('admin_container')
     <div class="container">
-        <h2 style="padding-top: 5%">Product Order Information</h2>
+        <h2 style="padding-top: 5%">Sell Cardboard Information</h2>
         <table class="table">
             <thead class="thead-dark">
             <tr>
@@ -20,15 +20,9 @@
                 <td>Ucup Gunawan</td>
                 <td>Bekas</td>
                 <td>01 - 11 - 2022</td>
-                <td>
-                    <select class="form-control" id="status" name="theme" style="border: 0px; outline: 0px; max-width: 50%">
-                        <option value="" disabled selected hidden> - status - </option>
-                        <option value="Under Checking">Under Checking</option>
-                        <option value="Ready to pick up">Ready to pick up</option>
-                        <option value="Picked Up">Picked Up</option>
-                    </select>
+                <td>Under Checking<td>
+                    <a class="btn btn-info" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Detail</a>
                 </td>
-                <td><a data-bs-toggle="modal" data-bs-target="#exampleModal"><u>detail</u></a></td>
             </tr>
 
             {{--        item 2--}}
@@ -36,15 +30,10 @@
                 <td>Alif Triatmaja</td>
                 <td>Baru</td>
                 <td>29 - 10 - 2022</td>
+                <td>Picked Up</td>
                 <td>
-                    <select class="form-control" id="status" name="theme" style="border: 0px; outline: 0px; max-width: 50%">
-                        <option value="" disabled selected hidden> - status - </option>
-                        <option value="Under Checking">Under Checking</option>
-                        <option value="Ready to pick up">Ready to pick up</option>
-                        <option value="Picked Up">Picked Up</option>
-                    </select>
+                    <a class="btn btn-info" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Detail</a>
                 </td>
-                <td><a href=""><u>detail</u></a></td>
             </tr>
             </tbody>
         </table>
@@ -124,28 +113,58 @@
                         </tr>
                         </tbody>
                     </table>
-                    <h5>Payment Info</h5>
+                    <h5>Pickup Info</h5>
                     <div class="container">
                         <p>
-                            Jenis Pembayaran <br>
-                            <b>Transfer Bank</b>
+                            Jasa Pengiriman <br>
+                            <b>DXD Express</b>
                         </p>
                         <p>
-                            No Referensi<br>
-                            <b>1234567890</b>
+                            No Resi<br>
+                            <b>JF2345TY8</b>
                         </p>
                         <p>
-                            Status Pembayaran<br>
-                            <b>Paid</b>
-                            <select class="form-control" id="status" name="theme" style="border: 0px; outline: 0px; max-width: 50%">
-                                <option value="Paid"><b>Paid</b></option>
-                                <option value="Unpaid"><b>Unpaid</b></option>
-                            </select>
+                            Delivery Date<br>
+                            <input name="delivdate"  id="delivdate" type="date" class="form-control" aria-describedby="deliveryDate">
+                        </p>
+                        <p>
+                            Pickup Status<br>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <select  name="order_status" id="order_status" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Pilih Status</option>
+                                    <option value="received">Info Submitted</option>
+                                    <option value="packing">Under Checking</option>
+                                    <option value="packing">Picked Up</option>
+                                </select>
+                            </li>
+                        </ul>
                         </p>
                     </div>
                 </div>
+
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalNotifSuccess">Simpan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    {{-- MODAL SUCCESS BUTTON --}}
+    <div class="modal fade" id="modalNotifSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Perhatian</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Perubahan Berhasil Disimpan
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
