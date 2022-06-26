@@ -89,6 +89,7 @@ Route::post('/tracking', [ShipmentController::class, 'trackProduct'])->name('Tra
 
 Route::post('/FormJualKardus/Biodata', [SellController::class, 'AddBioPenjual'])->name('AddBioPenjual');
 Route::post('/FormJualKardus/DescKardus', [SellController::class, 'AddProductSell'])->name('AddProductSell');
+Route::post('/FormJualKardus/DateKardus', [SellController::class, 'UpdateProductSell'])->name('UpdateProductSell');
 
 Route::get('/aboutus', function () {
     return view('page.aboutus',[

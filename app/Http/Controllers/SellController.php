@@ -49,4 +49,17 @@ class SellController extends Controller
 
         return view('servicepage.JualKardus.jualkardusform3', compact("sells", "title"));
     }
+
+    public function UpdateProductSell(Request $request)
+    {
+        sell::where('sell_id', $request->sell_id)
+            ->update(['sell_date' => $request->sell_date,
+                        'sell_status' => "Info Submitted"]);
+        
+        $sells = sell::where('sell_id', $request->sell_id)->first();
+
+        $title = "Pack.in | Jual Kardus";
+
+        return view('servicepage.JualKardus.jualkardusform4');
+    }
 }

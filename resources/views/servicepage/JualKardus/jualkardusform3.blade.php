@@ -63,13 +63,13 @@
 
 
     <div class="contact-box mt-3">
-        <form action="" style="margin: 35px;">
+        <form action="{{ route('UpdateProductSell') }}" enctype="multipart/form-data" method="POST" style="margin: 35px;">
+            @csrf
             <label class="fw-bold" for="">*Pilih Tanggal :</label>
-
-            <input type="text" placeholder="dd-mm-yyyy" onfocus="(this.type='date')" onblur="(this.type='text')" class="input-field">
-
-            <button type="button" class="btn" >BACK</button>
-            <button type="button" class="btn" style="margin-left: 205px;">NEXT</button>
+            <input type="hidden" value="{{ $sells->sell_id }}" name="sell_id">
+            <input type="text" placeholder="dd-mm-yyyy" onfocus="(this.type='date')" onblur="(this.type='text')" class="input-field" name="sell_date">
+            <input class="btn" type="button" value="BACK" onclick="history.go(-1)">
+            <button type="submit" class="btn" style="margin-left: 205px;">NEXT</button>
         </form>
     </div>
 
