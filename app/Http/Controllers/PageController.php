@@ -45,4 +45,12 @@ class PageController extends Controller
 
         return view('servicepage.JualKardus.jualkardus', compact("title", "nav"));
     }
+
+    public function CekPesanan()
+    {
+        $title = "Pack.in | Cek Pesanan";
+        $nav = "2";
+
+        return view('page.cekpesanan1', compact("title", "nav"));
+    }
 }

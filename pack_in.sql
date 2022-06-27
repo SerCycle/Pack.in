@@ -85,11 +85,9 @@ CREATE TABLE `orders` (
   `warna` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `design_user` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`order_id`),
-  KEY `orders_user_id_foreign` (`user_id`),
   KEY `orders_product_id_foreign` (`product_id`),
-  CONSTRAINT `orders_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`),
-  CONSTRAINT `orders_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  CONSTRAINT `orders_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19868514 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,6 +96,7 @@ CREATE TABLE `orders` (
 
 LOCK TABLES `orders` WRITE;
 /*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+INSERT INTO `orders` VALUES (10171871,13356769,3,'2022-06-27','Paid','blue','design_user13554.jpg'),(12155647,16531392,1,'2022-06-27','Delivered','white','none');
 /*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,7 +138,7 @@ CREATE TABLE `payments` (
   PRIMARY KEY (`payment_id`),
   KEY `payments_order_id_foreign` (`order_id`),
   CONSTRAINT `payments_order_id_foreign` FOREIGN KEY (`order_id`) REFERENCES `orders` (`order_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6969619868514 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -148,6 +147,7 @@ CREATE TABLE `payments` (
 
 LOCK TABLES `payments` WRITE;
 /*!40000 ALTER TABLE `payments` DISABLE KEYS */;
+INSERT INTO `payments` VALUES (66610171871,10171871,'payment18394.jpg'),(66612155647,12155647,'payment17195.jpg');
 /*!40000 ALTER TABLE `payments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -207,7 +207,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Produk #1',100000,'Box berbahan E-Fluete Board dengan ukuran minimal 26cm x 26cm. Cocok untuk menyimpan segala jenis barang, mulai dari buku, kosmetik, bahkan cocok digunakan sebagai bungkus kado.','image/product/Image Product-1.jpg',888888),(2,'Produk #2',200000,'lorem ipsum produk  2','image/product/Image Product-2.jpg',888888),(3,'Produk #3',300000,'lorem ipsum produk 3','image/product/Image Product-3.jpg',888888),(4,'Produk #4',400000,'lorem ipsum produk 4','image/product/Image Product-4.png',888888);
+INSERT INTO `products` VALUES (1,'Produk #1',1000,'Box berbahan E-Fluete Board dengan ukuran minimal 26cm x 26cm. Cocok untuk menyimpan segala jenis barang, mulai dari buku, kosmetik, bahkan cocok digunakan sebagai bungkus kado.','image/product/Image Product-1.jpg',888888),(2,'Produk #2',2000,'lorem ipsum produk  2','image/product/Image Product-2.jpg',888888),(3,'Produk #3',3000,'lorem ipsum produk 3','image/product/Image Product-3.jpg',888888),(4,'Produk #4',4000,'lorem ipsum produk 4','image/product/Image Product-4.png',888888);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -221,14 +221,15 @@ DROP TABLE IF EXISTS `sells`;
 CREATE TABLE `sells` (
   `sell_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` bigint(20) unsigned NOT NULL,
-  `cardboard` int(11) NOT NULL,
-  `price` int(11) NOT NULL,
-  `sell_date` date NOT NULL,
+  `ketebalan` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `berat` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `kondisi` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sell_date` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `sell_status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`sell_id`),
   KEY `sells_user_id_foreign` (`user_id`),
   CONSTRAINT `sells_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19761429 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -237,6 +238,7 @@ CREATE TABLE `sells` (
 
 LOCK TABLES `sells` WRITE;
 /*!40000 ALTER TABLE `sells` DISABLE KEYS */;
+INSERT INTO `sells` VALUES (12480253,18633810,'6 mm - 7 mm','9000','Bekas','2022-07-29','Info Submitted');
 /*!40000 ALTER TABLE `sells` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -280,7 +282,7 @@ CREATE TABLE `users` (
   `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `address` text COLLATE utf8mb4_unicode_ci,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19976785 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -289,6 +291,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (13356769,'subagyo atmaja','0878956352587','elmatadore amerika'),(16531392,'asep one tap','087654987','dimana mana ada'),(18633810,'asep one tap','0878787878','elmatadore amerika');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -301,4 +304,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-06-16  9:23:14
+-- Dump completed on 2022-06-27 20:06:30

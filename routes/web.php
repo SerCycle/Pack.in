@@ -37,6 +37,7 @@ Route::get('/Service', [PageController::class, 'servicePage'])->name('Service');
 Route::get('/JualKardus/Bio', [PageController::class, 'JualKardusPage'])->name('JualKardus');
 Route::get('/About', [PageController::class, 'AboutPage'])->name('About');
 Route::get('/JualKardus', [PageController::class, 'Jual'])->name('Jual');
+Route::get('/CekPesanan', [PageController::class, 'CekPesanan'])->name('CekPesanan');
 
 Route::get('/Product/{id}', [ProductController::class, 'selectedProduct'])->name('selectedProduct');
 
