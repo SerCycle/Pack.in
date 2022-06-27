@@ -47,7 +47,7 @@
     <h3 class="text-center" style=" margin-top 30px; margin-bottom: 60px;">your order was delivered...</h3>
 
     <div class="container col-md-12 text-center" style="margin-top: 30px;">
-        <button type="button" class="btn" for="home" >Home </button>
+        <a href="{{ route('Home') }}" type="button" class="btn" for="home" >Home </a>
         <button type="button" class="btn" style="margin-left: 15%;" for="upload"> Add Order </button>
     </div>
 

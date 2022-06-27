@@ -61,7 +61,7 @@
     <h3 class="text-center mb-3" style="font-weight: 700; margin-bottom: 30px;">Select Date</h3>
     <div class="contact-box mt-3 text-center">
         <p class="text-center fw-bold" style="border: solid; border-width: 1px; border-radius: 5px; width: 200px;; margin:auto; padding: 5px; padding-top: 5px; padding-bottom: 5px;">Pengisian data berhasil!</p>
-        <a href="/home" class="btn" style="margin-top: 100px;">HOME</a>
+        <a href="{{ route('Home') }}" class="btn" style="margin-top: 100px;">HOME</a>
     </div>
 
 </body>

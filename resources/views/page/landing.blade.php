@@ -21,7 +21,7 @@
                 <div class="d-flex container align-items-center">
                     <h1 class="pt-1 pb-1" style="font-size: 50px">Pack.in</h1>
                     <span class="pb-1 ms-3 me-3" style="font-size: 60px">|</span>
-                    <a href="about" class="text-dark pt-3" style="font-size: 30px; text-decoration: none">About Us</a>
+                    <a href="{{ route('About') }}" class="text-dark pt-3" style="font-size: 30px; text-decoration: none">About Us</a>
                 </div>
             </div>
         </nav>
@@ -33,7 +33,7 @@
                         <p class="text-white" style="font-size: 25px">Lengkapi keindahan bingkisan & hadiahmu dengan Custome Package</p>
                         <div class="p-1 d-flex justify-content-center align-items-center">
                             <div class="m-3 rounded-3">
-                                <a href="home" class="text-white btn d-grid gap-2 mx-auto" style="background-image: radial-gradient(255.8% 457.4% at 88.45% 24.64%, #BB6552 0%, #646464 100%); font-size: 30px;border-radius: 2rem;">
+                                <a href="{{ route('Home') }}" class="text-white btn d-grid gap-2 mx-auto" style="background-image: radial-gradient(255.8% 457.4% at 88.45% 24.64%, #BB6552 0%, #646464 100%); font-size: 30px;border-radius: 2rem;">
                                     Start Customize
                                 </a>
                             </div>

@@ -98,7 +98,7 @@
                 </div>
                 <div class="row">
                     <div class="col text-left">
-                        <a href="/home" class="btn" for="home"> HOME </a>
+                        <a href="{{ route('Home') }}" class="btn" for="home"> HOME </a>
                     </div>
                     <div class="col">
                         <button type="submit" class="btn" style="margin-left: 62%;" for="upload">UPLOAD</button>

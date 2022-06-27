@@ -21,4 +21,28 @@ class PageController extends Controller
 
         return view('servicepage.JualKardus.jualkardusform1', compact("title"));
     }
+
+    public function HomePage()
+    {
+        $title = "Pack.in | Home";
+        $nav = "1";
+
+        return view('page.home', compact("title", "nav"));
+    }
+
+    public function AboutPage()
+    {
+        $title = "Pack.in | About Us";
+        $nav = "3";
+
+        return view('page.aboutus', compact("title", "nav"));
+    }
+
+    public function Jual()
+    {
+        $title = "Pack.in | Jual Kardus";
+        $nav = "3";
+
+        return view('servicepage.JualKardus.jualkardus', compact("title", "nav"));
+    }
 }

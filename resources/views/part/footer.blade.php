@@ -7,8 +7,8 @@
                 </div>
                 <div class="col-4 text-center">
                     <b>Services</b><br>
-                    <a class="text-white" href="" style="text-decoration: none">Custome Package</a><br>
-                    <a class="text-white" href="/jualkardus" style="text-decoration: none">Sell Cardboard</a>
+                    <a class="text-white" href="{{ route('selectedProduct', 1) }}" style="text-decoration: none">Custome Package</a><br>
+                    <a class="text-white" href="{{ route('Jual') }}" style="text-decoration: none">Sell Cardboard</a>
                 </div>
                 <div class="col-4 text-center">
                     <b>Contact Us</b><br>

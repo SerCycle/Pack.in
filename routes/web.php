@@ -25,67 +25,27 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/jualkardus', function () {
-    return view('servicepage.JualKardus.jualkardus',[
-        "title" => "Pack.in | Service - Jual Kardus",
+Route::get('/Admin', function () {
+    return view('admin.home',[
+        "title" => "Pack.in | Wellcome Admin",
         "nav" => "2"
     ]);
 });
 
-// Route::get('/jualkardusform1', function () {
-//     return view('servicepage.JualKardus.jualkardusform1',[
-//         "title" => "Pack.in | Service - Jual Kardus Form 1",
-//         "nav" => "2"
-//     ]);
-// });
+Route::get('/Home', [PageController::class, 'HomePage'])->name('Home');
+Route::get('/Service', [PageController::class, 'servicePage'])->name('Service');
+Route::get('/JualKardus/Bio', [PageController::class, 'JualKardusPage'])->name('JualKardus');
+Route::get('/About', [PageController::class, 'AboutPage'])->name('About');
+Route::get('/JualKardus', [PageController::class, 'Jual'])->name('Jual');
 
-// Route::get('/jualkardusform2', function () {
-//     return view('servicepage.JualKardus.jualkardusform2',[
-//         "title" => "Pack.in | Service - Jual Kardus Form 2",
-//         "nav" => "2"
-//     ]);
-// });
+Route::get('/Product/{id}', [ProductController::class, 'selectedProduct'])->name('selectedProduct');
 
-// Route::get('/jualkardusform3', function () {
-//     return view('servicepage.JualKardus.jualkardusform3',[
-//         "title" => "Pack.in | Service - Jual Kardus Form 3",
-//         "nav" => "2"
-//     ]);
-// });
-
-Route::get('/jualkardusform4', function () {
-    return view('servicepage.JualKardus.jualkardusform4',[
-        "title" => "Pack.in | Service - Jual Kardus Form 4",
-        "nav" => "2"
-    ]);
-});
-
-
-Route::get('/cekpesanan1', function () {
-    return view('page.cekpesanan1',[
-        "title" => "Pack.in | Home Page - Cek Pesanan",
-        "nav" => "2"
-    ]);
-});
-
-Route::get('/cekpesanan2', function () {
-    return view('page.cekpesanan2',[
-        "title" => "Pack.in | Home Page - Cek Pesanan",
-        "nav" => "2"
-    ]);
-});
-
-Route::get('/service', [PageController::class, 'servicePage'])->name('Service');
-Route::get('/JualKardus', [PageController::class, 'JualKardusPage'])->name('JualKardus');
-
-Route::get('/product/{id}', [ProductController::class, 'selectedProduct'])->name('selectedProduct');
-
-Route::get('/designorder/{id}', [OrderController::class, 'orderProduct1'])->name('OrderProduct1');
-Route::post('/biodataorder/{id}', [OrderController::class, 'orderProduct2'])->name('OrderProduct2');
-Route::post('/validatedorder/{id}', [OrderController::class, 'orderProduct3'])->name('OrderProduct3');
+Route::get('/DesignOrder/{id}', [OrderController::class, 'orderProduct1'])->name('OrderProduct1');
+Route::post('/BiodataOrder/{id}', [OrderController::class, 'orderProduct2'])->name('OrderProduct2');
+Route::post('/ValidatedOrder/{id}', [OrderController::class, 'orderProduct3'])->name('OrderProduct3');
 Route::post('/OrderDone', [OrderController::class, 'orderFinal'])->name('OrderProductFinal');
 
-Route::post('/tracking', [ShipmentController::class, 'trackProduct'])->name('Tracking');
+Route::post('/Tracking', [ShipmentController::class, 'trackProduct'])->name('Tracking');
 
 Route::post('/FormJualKardus/Biodata', [SellController::class, 'AddBioPenjual'])->name('AddBioPenjual');
 Route::post('/FormJualKardus/DescKardus', [SellController::class, 'AddProductSell'])->name('AddProductSell');
@@ -96,37 +56,16 @@ Route::post('/Admin/OrderInfo/InfoUpdated', [OrderController::class, 'UpdateOrde
 Route::get('/Admin/CardboardInfo', [SellController::class, 'AdminSell'])->name('AdminSell');
 Route::post('/Admin/SellInfo/InfoUpdated', [SellController::class, 'UpdateSellAdmin'])->name('UpdateSellAdmin');
 
-Route::get('/aboutus', function () {
-    return view('page.aboutus',[
-        "title" => "Pack.in | About Us",
-        "nav" => "3"
-    ]);
-});
-
-Route::get('/home', function () {
-    return view('page.home',[
-        "title" => "Pack.in | Home",
-        "nav" => "1"
-    ]);
-});
-
-Route::get('/Admin', function () {
-    return view('admin.home',[
-        "title" => "Pack.in | Wellcome Admin",
-        "nav" => "2"
-    ]);
-});
-
-// Route::get('/admin-orderinfo', function () {
-//     return view('admin.order_info',[
-//         "title" => "Pack.in | Customize Order",
-//         "nav" => "11"
+// Route::get('/aboutus', function () {
+//     return view('page.aboutus',[
+//         "title" => "Pack.in | About Us",
+//         "nav" => "3"
 //     ]);
 // });
 
-// Route::get('/admin-cardboardinfo', function () {
-//     return view('admin.sell_cardboard_info',[
-//         "title" => "Pack.in | Sell Cardboard",
-//         "nav" => "22"
+// Route::get('/home', function () {
+//     return view('page.home',[
+//         "title" => "Pack.in | Home",
+//         "nav" => "1"
 //     ]);
 // });

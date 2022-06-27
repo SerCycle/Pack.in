@@ -119,7 +119,7 @@
         </div>
     </div>
 </div>
-<a href="jualkardus">
+<a href="{{ route('Jual') }}">
     <div class="container2 container card p-2 shadow-lg" style="margin-top: 2%; margin-bottom: 50px;">
         <h3 style="color: white; font-size: 30px; margin-left:30px; padding-top:2%;">Jual Kardus</h3>
         <p><br><br><br><br><br><br><br><br><br><br><br></p>
