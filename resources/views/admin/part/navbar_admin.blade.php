@@ -9,7 +9,7 @@
             <div class="collapse navbar-collapse m-auto d-flex justify-content-end" id="navbarNav">
                 <ul class="navbar-nav pe-4">
                     <li class="nav-item active">
-                        <a class="nav-link {{ ($nav === '11' ) ? 'active' : '' }}" href="/admin-orderinfo">CUSTOME ORDER</a>
+                        <a class="nav-link {{ ($nav === '11' ) ? 'active' : '' }}" href="{{ route('AdminOrder') }}">CUSTOME ORDER</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ ($nav === '22' ) ? 'active' : '' }}" href="/admin-cardboardinfo">SELL CARDBOARD</a>

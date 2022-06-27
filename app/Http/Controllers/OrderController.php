@@ -123,4 +123,33 @@ class OrderController extends Controller
 
         return view('servicepage.ProductOrder.productorder4', compact("title", "orders"));
     }
+
+    public function AdminOrder()
+    {
+        $orders = order::all();
+        $users = user::all();
+        $products = product::all();
+        $payments = payment::all();
+
+        $title = "Pack.in | Customize Order";
+        $nav = "11";
+
+        return view('admin.order_info', compact("title", "nav", "orders", "nav", "users", "products", "payments"));
+    }
+    public function UpdateOrderAdmin(Request $request)
+    {
+        order::where('order_id', $request->order_id)
+            ->update(['order_status' => $request->order_status,
+                        'order_date' => $request->order_date]);
+        
+        $orders = order::all();
+        $users = user::all();
+        $products = product::all();
+        $payments = payment::all();
+
+        $title = "Pack.in | Customize Order";
+        $nav = "11";
+
+        return view('admin.order_info', compact("title", "nav", "orders", "nav", "users", "products", "payments"));
+    }
 }

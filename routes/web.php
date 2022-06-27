@@ -91,6 +91,9 @@ Route::post('/FormJualKardus/Biodata', [SellController::class, 'AddBioPenjual'])
 Route::post('/FormJualKardus/DescKardus', [SellController::class, 'AddProductSell'])->name('AddProductSell');
 Route::post('/FormJualKardus/DateKardus', [SellController::class, 'UpdateProductSell'])->name('UpdateProductSell');
 
+Route::get('/admin-orderinfo', [OrderController::class, 'AdminOrder'])->name('AdminOrder');
+Route::post('/admin-orderinfo/InfoUpdated', [OrderController::class, 'UpdateOrderAdmin'])->name('UpdateOrderAdmin');
+
 Route::get('/aboutus', function () {
     return view('page.aboutus',[
         "title" => "Pack.in | About Us",
@@ -112,12 +115,12 @@ Route::get('/admin', function () {
     ]);
 });
 
-Route::get('/admin-orderinfo', function () {
-    return view('admin.order_info',[
-        "title" => "Pack.in | Customize Order",
-        "nav" => "11"
-    ]);
-});
+// Route::get('/admin-orderinfo', function () {
+//     return view('admin.order_info',[
+//         "title" => "Pack.in | Customize Order",
+//         "nav" => "11"
+//     ]);
+// });
 
 Route::get('/admin-cardboardinfo', function () {
     return view('admin.sell_cardboard_info',[
