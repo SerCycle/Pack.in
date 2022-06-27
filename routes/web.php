@@ -27,7 +27,7 @@ Route::get('/', function () {
 
 Route::get('/Admin', function () {
     return view('admin.home',[
-        "title" => "Pack.in | Wellcome Admin",
+        "title" => "Pack.in | Welcome Admin",
         "nav" => "2"
     ]);
 });
