@@ -91,8 +91,10 @@ Route::post('/FormJualKardus/Biodata', [SellController::class, 'AddBioPenjual'])
 Route::post('/FormJualKardus/DescKardus', [SellController::class, 'AddProductSell'])->name('AddProductSell');
 Route::post('/FormJualKardus/DateKardus', [SellController::class, 'UpdateProductSell'])->name('UpdateProductSell');
 
-Route::get('/admin-orderinfo', [OrderController::class, 'AdminOrder'])->name('AdminOrder');
-Route::post('/admin-orderinfo/InfoUpdated', [OrderController::class, 'UpdateOrderAdmin'])->name('UpdateOrderAdmin');
+Route::get('/Admin/OrderInfo', [OrderController::class, 'AdminOrder'])->name('AdminOrder');
+Route::post('/Admin/OrderInfo/InfoUpdated', [OrderController::class, 'UpdateOrderAdmin'])->name('UpdateOrderAdmin');
+Route::get('/Admin/CardboardInfo', [SellController::class, 'AdminSell'])->name('AdminSell');
+Route::post('/Admin/SellInfo/InfoUpdated', [SellController::class, 'UpdateSellAdmin'])->name('UpdateSellAdmin');
 
 Route::get('/aboutus', function () {
     return view('page.aboutus',[
@@ -108,7 +110,7 @@ Route::get('/home', function () {
     ]);
 });
 
-Route::get('/admin', function () {
+Route::get('/Admin', function () {
     return view('admin.home',[
         "title" => "Pack.in | Wellcome Admin",
         "nav" => "2"
@@ -122,9 +124,9 @@ Route::get('/admin', function () {
 //     ]);
 // });
 
-Route::get('/admin-cardboardinfo', function () {
-    return view('admin.sell_cardboard_info',[
-        "title" => "Pack.in | Sell Cardboard",
-        "nav" => "22"
-    ]);
-});
+// Route::get('/admin-cardboardinfo', function () {
+//     return view('admin.sell_cardboard_info',[
+//         "title" => "Pack.in | Sell Cardboard",
+//         "nav" => "22"
+//     ]);
+// });

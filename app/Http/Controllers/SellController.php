@@ -62,4 +62,29 @@ class SellController extends Controller
 
         return view('servicepage.JualKardus.jualkardusform4');
     }
+
+    public function AdminSell()
+    {
+        $users = user::all();
+        $sells = sell::all();
+
+        $title = "Pack.in | Sell Cardboard";
+        $nav = "22";
+
+        return view('admin.sell_cardboard_info', compact("title", "nav", "users", "sells"));
+    }
+    public function UpdateSellAdmin(Request $request)
+    {
+        sell::where('sell_id', $request->sell_id)
+            ->update(['sell_status' => $request->sell_status,
+                        'sell_date' => $request->sell_date]);
+        
+        $users = user::all();
+        $sells = sell::all();
+
+        $title = "Pack.in | Sell Cardboard";
+        $nav = "22";
+
+        return view('admin.sell_cardboard_info', compact("title", "nav", "users", "sells"));
+    }
 }
