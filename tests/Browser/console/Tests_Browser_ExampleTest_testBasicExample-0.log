@@ -1,0 +1,62 @@
+[
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/css\/style.css - Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "source": "network",
+        "timestamp": 1656426837997
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/style2.css - Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "source": "network",
+        "timestamp": 1656426838137
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/js\/bootstrap.bundle.min.js.map 0:10 Uncaught SyntaxError: Unexpected token ':'",
+        "source": "javascript",
+        "timestamp": 1656426838608
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/css\/style.css - Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "source": "network",
+        "timestamp": 1656426839631
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/style2.css - Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "source": "network",
+        "timestamp": 1656426839795
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/js\/bootstrap.bundle.min.js.map 0:10 Uncaught SyntaxError: Unexpected token ':'",
+        "source": "javascript",
+        "timestamp": 1656426839808
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/css\/style.css - Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "source": "network",
+        "timestamp": 1656426840581
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/Product\/style2.css - Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "source": "network",
+        "timestamp": 1656426840915
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/js\/bootstrap.bundle.min.js.map 0:10 Uncaught SyntaxError: Unexpected token ':'",
+        "source": "javascript",
+        "timestamp": 1656426840927
+    },
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/localhost:8000\/DesignOrder\/style2.css - Failed to load resource: the server responded with a status of 500 (Internal Server Error)",
+        "source": "network",
+        "timestamp": 1656426841980
+    }
+]
